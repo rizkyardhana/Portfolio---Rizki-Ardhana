@@ -1,0 +1,2908 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Rizki Ardhana</title>
+  <meta name="description"
+    content="Portofolio Profesional Junior Content Editor - Muhammad Rizki Ardhana. Membantu UMKM dan brand mengembangkan konten promosi melalui desain visual, editing video Reels CapCut, copywriting, dan katalog produk." />
+  <meta name="author" content="Muhammad Rizki Ardhana" />
+  <meta name="keywords"
+    content="Content Editor, MIX Academy, Canva, CapCut, Portofolio Content Editor, Desain Feed, Desain Story, Reels Video Editing, Copywriting UMKM, HASANI Herbal Nabawi" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Muhammad Rizki Ardhana | Creative Content Editor Portfolio" />
+  <meta property="og:description"
+    content="Portofolio Akhir MIX Academy Batch 3 – Konten Editor 2026. Dummy Project Social Media Content Campaign for UMKM HASANI Herbal Nabawi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./public/assets/hasani/hasani-feed-1.jpeg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lavender: {
+              50: '#F2F9F5',
+              100: '#E4F3EA',
+              200: '#C7E7D5',
+              300: '#99D5B3',
+              400: '#52B67E',
+              500: '#1F9959',
+              600: '#0D5C3A', // Official HASANI Emerald Green (Identitas Utama)
+              700: '#0A4D30',
+              800: '#083F27',
+              900: '#072C1C',
+              950: '#041B11', // Deep Forest Charcoal
+            },
+            herbal: {
+              50: '#F2F9F5',
+              100: '#E4F3EA',
+              200: '#C7E7D5',
+              300: '#99D5B3',
+              400: '#52B67E',
+              500: '#1F9959',
+              600: '#0D5C3A',
+              700: '#0A4D30',
+              800: '#083F27',
+              900: '#072C1C',
+              950: '#041B11',
+            },
+            gold: {
+              50: '#FDFBF5',
+              100: '#FBF5E6',
+              200: '#F6E8BF',
+              300: '#EFD58E',
+              400: '#DCB74B',
+              500: '#C59B27', // Official HASANI Royal Gold
+              600: '#A9811C',
+              700: '#876414',
+              800: '#674B11',
+              900: '#4A340D',
+            },
+            brand: {
+              dark: '#081C13',
+              deep: '#0F281E', // Official HASANI Deep Charcoal Forest
+              soft: '#F4F9F6', // Fresh clean herbal background
+              border: '#DCE8E1', // Fresh clean herbal border
+              pink: '#FBF5E6', // Warm royal gold tint
+              gold: '#C59B27'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -2px rgba(13, 92, 58, 0.08)',
+            'elevated': '0 12px 30px -4px rgba(15, 40, 30, 0.12)',
+            'card': '0 2px 14px -1px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.03)',
+            'glow': '0 0 35px -5px rgba(13, 92, 58, 0.35)',
+            'gold-glow': '0 0 35px -5px rgba(197, 155, 39, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom refined animations & utilities */
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1F2937;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+
+    .editorial-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Custom Glassmorphism */
+    .glass-header {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(220, 232, 225, 0.85);
+    }
+
+    /* Subtle pulse animation for Reels simulation */
+    @keyframes pulseRing {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+
+      50% {
+        transform: scale(1.05);
+        opacity: 0.4;
+      }
+
+      100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+    }
+
+    .pulse-ring {
+      animation: pulseRing 3s ease-in-out infinite;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F4F9F6;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #C7E7D5;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0D5C3A;
+    }
+
+    /* Aspect ratio fallback */
+    .aspect-4-5 {
+      aspect-ratio: 4 / 5;
+    }
+
+    .aspect-feed-hasani {
+      aspect-ratio: 1792 / 2400;
+    }
+
+    .aspect-9-16 {
+      aspect-ratio: 9 / 16;
+    }
+  </style>
+</head>
+
+<body class="antialiased selection:bg-lavender-200 selection:text-lavender-900">
+
+  <!-- ================= TOP NOTIFICATION STRIP ================= -->
+  <div
+    class="bg-lavender-950 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium border-b border-lavender-900 flex items-center justify-center gap-2">
+    <span
+      class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-lavender-600 text-[11px] font-bold uppercase tracking-wider">Final
+      Project</span>
+    <span>MIX Academy Batch 3 – Konten Editor 2026 • Portofolio Resmi Muhammad Rizki Ardhana</span>
+  </div>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="sticky top-0 z-50 glass-header transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo / Brand Identifier -->
+        <a href="#hero"
+          class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-lavender-600 rounded-lg p-1">
+          <div
+            class="w-11 h-11 rounded-xl bg-gradient-to-br from-lavender-600 to-lavender-900 flex items-center justify-center text-white font-bold text-lg shadow-sm group-hover:scale-105 transition-transform">
+            RA
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="font-extrabold text-base sm:text-lg tracking-tight text-gray-900 group-hover:text-lavender-700 transition-colors">
+              Rizki Ardhana
+            </span>
+            <span class="text-xs font-semibold text-lavender-600 tracking-wider uppercase">
+              Junior Content Editor
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-semibold text-gray-600">
+          <a href="#hero"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Beranda</a>
+          <a href="#about"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Tentang Saya</a>
+          <a href="#skills"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Skills &
+            Tools</a>
+          <a href="#dummy-project"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Dummy
+            Project</a>
+          <a href="#copywriting"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Copywriting</a>
+          <a href="#feed-design"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Feed IG</a>
+          <a href="#story-design"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Story IG</a>
+          <a href="#reels-video"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Reels Video</a>
+          <a href="#catalog"
+            class="px-3 py-2 rounded-lg hover:text-lavender-700 hover:bg-lavender-50 transition-colors">Katalog</a>
+        </nav>
+
+        <!-- Right Action Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#contact"
+            class="inline-flex items-center gap-2 bg-lavender-700 hover:bg-lavender-800 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow-glow transition-all duration-300">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Hubungi Saya</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex items-center lg:hidden">
+          <button id="mobileMenuBtn" aria-label="Buka Menu Navigasi"
+            class="p-2 rounded-lg text-gray-700 hover:text-lavender-700 hover:bg-lavender-50 focus:outline-none">
+            <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu"
+      class="hidden lg:hidden border-b border-brand-border bg-white px-4 pt-2 pb-6 space-y-1 shadow-lg">
+      <a href="#hero"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Beranda</a>
+      <a href="#about"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Tentang
+        Saya</a>
+      <a href="#skills"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Skills
+        & Tools</a>
+      <a href="#dummy-project"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Dummy
+        Project UMKM</a>
+      <a href="#copywriting"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Copywriting
+        Project</a>
+      <a href="#feed-design"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Instagram
+        Feed Design</a>
+      <a href="#story-design"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Instagram
+        Story Design</a>
+      <a href="#reels-video"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Reels
+        Video Editing</a>
+      <a href="#catalog"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-gray-700 hover:text-lavender-700 hover:bg-lavender-50">Product
+        Catalog Design</a>
+      <a href="#contact"
+        class="mobile-nav-link block px-3 py-2.5 rounded-md text-base font-semibold text-lavender-700 bg-lavender-50">Hubungi
+        Saya (WhatsApp)</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= SECTION A: HERO SECTION ================= -->
+    <section id="hero"
+      class="relative pt-12 pb-20 md:pt-20 md:pb-32 bg-gradient-to-b from-lavender-50/60 via-white to-white overflow-hidden">
+      <!-- Decorative Background Blooms -->
+      <div
+        class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-lavender-200/40 rounded-full blur-3xl pointer-events-none -z-10">
+      </div>
+      <div
+        class="absolute -top-20 -right-20 w-96 h-96 bg-brand-pink/30 rounded-full blur-3xl pointer-events-none -z-10">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+
+          <!-- Left Hero Column: Copy & Presentation -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-lavender-200 shadow-sm text-xs sm:text-sm font-semibold text-lavender-800">
+              <span class="w-2 h-2 rounded-full bg-lavender-600 animate-ping"></span>
+              <span>Junior Content Editor • MIX Academy 2026</span>
+            </div>
+
+            <!-- Main Heading (Persis Sesuai Prompt) -->
+            <div class="space-y-2">
+              <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight text-brand-deep leading-[1.15]">
+                Creative Content Editor
+              </h1>
+              <p class="text-xl sm:text-2xl font-semibold text-lavender-700 tracking-tight">
+                Helping UMKM Create Attractive, Creative &amp; Meaningful Digital Content.
+              </p>
+            </div>
+
+            <!-- Description (Persis Sesuai Prompt) -->
+            <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              Saya membantu UMKM mengembangkan konten promosi melalui desain visual, editing video, copywriting, dan
+              katalog produk yang menarik.
+            </p>
+
+            <!-- Name Tag -->
+            <div class="pt-1 flex items-center justify-center lg:justify-start gap-3">
+              <div class="h-8 w-1 bg-lavender-600 rounded-full"></div>
+              <p class="text-sm font-bold text-gray-800">
+                Portofolio Karya: <span class="text-lavender-700">Muhammad Rizki Ardhana</span>
+              </p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#dummy-project"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-lavender-700 hover:bg-lavender-800 text-white font-bold text-base px-8 py-4 rounded-xl shadow-elevated hover:shadow-glow transition-all duration-300">
+                <span>Lihat Portofolio</span>
+                <i data-lucide="arrow-down" class="w-5 h-5"></i>
+              </a>
+
+              <a href="#contact"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-lavender-50 text-lavender-900 border-2 border-lavender-300 font-bold text-base px-8 py-4 rounded-xl shadow-sm hover:border-lavender-500 transition-all duration-300">
+                <i data-lucide="phone-call" class="w-5 h-5 text-lavender-700"></i>
+                <span>Hubungi Saya</span>
+              </a>
+            </div>
+
+            <!-- Key Highlights Pill Strip -->
+            <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl mx-auto lg:mx-0">
+              <div class="bg-white p-3 rounded-xl border border-brand-border text-center shadow-card">
+                <span class="block text-lg font-black text-lavender-700">100%</span>
+                <span class="text-xs font-semibold text-gray-500">Kampanye Terpadu</span>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-brand-border text-center shadow-card">
+                <span class="block text-lg font-black text-lavender-700">3 Format</span>
+                <span class="text-xs font-semibold text-gray-500">Feed, Story, Reels</span>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-brand-border text-center shadow-card">
+                <span class="block text-lg font-black text-lavender-700">Canva</span>
+                <span class="text-xs font-semibold text-gray-500">Design Core</span>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-brand-border text-center shadow-card">
+                <span class="block text-lg font-black text-lavender-700">CapCut</span>
+                <span class="text-xs font-semibold text-gray-500">Video Core</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Hero Column: Editorial Mockup & Visual Presentation -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+
+              <!-- Main Avatar Frame -->
+              <div class="relative bg-white p-4 rounded-3xl shadow-elevated border border-lavender-200">
+                <div class="w-full aspect-[4/5] rounded-2xl overflow-hidden relative shadow-inner">
+                  <img src="./public/assets/profile.jpg" alt="Muhammad Rizki Ardhana - Content Editor"
+                    class="w-full h-full object-cover object-[center_20%] hover:scale-105 transition-transform duration-500" />
+
+                  <!-- Subtle gradient at bottom for text contrast -->
+                  <div
+                    class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/40 to-transparent pointer-events-none">
+                  </div>
+
+                  <!-- Bottom Overlay Tag -->
+                  <div
+                    class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-lavender-200 shadow-soft flex items-center justify-between">
+                    <div>
+                      <h2 class="text-sm font-bold text-gray-900">Muhammad Rizki Ardhana</h2>
+                      <p class="text-xs font-medium text-lavender-600">Junior Content Editor</p>
+                    </div>
+                    <span
+                      class="inline-flex items-center gap-1 text-[11px] font-bold bg-green-50 text-green-700 border border-green-200 px-2.5 py-1 rounded-full">
+                      <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Ready to Work
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Mini Mockup 1: Feed Preview -->
+              <div
+                class="absolute -top-6 -left-6 hidden sm:flex items-center gap-3 bg-white p-3 rounded-2xl shadow-elevated border border-lavender-100 max-w-[210px] animate-bounce"
+                style="animation-duration: 6s;">
+                <div
+                  class="w-10 h-10 rounded-lg bg-emerald-700 flex items-center justify-center text-white shrink-0 shadow-sm">
+                  <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-gray-900">Feed 1080×1350</p>
+                  <p class="text-[11px] text-gray-500">Instagram Carousel</p>
+                </div>
+              </div>
+
+              <!-- Floating Mini Mockup 2: CapCut Reels Badge -->
+              <div
+                class="absolute -bottom-6 -right-6 hidden sm:flex items-center gap-3 bg-white p-3 rounded-2xl shadow-elevated border border-lavender-100 max-w-[210px]">
+                <div
+                  class="w-10 h-10 rounded-lg bg-brand-deep flex items-center justify-center text-white shrink-0 shadow-sm">
+                  <svg class="w-5 h-5 text-emerald-300" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-gray-900">CapCut Video</p>
+                  <p class="text-[11px] text-gray-500">18s Vertical Reels</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION B: ABOUT ME – PROFIL DIRI ================= -->
+    <section id="about" class="py-20 md:py-28 bg-white border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <span
+            class="text-xs font-bold uppercase tracking-wider text-lavender-600 bg-lavender-50 px-3.5 py-1.5 rounded-full border border-lavender-200">
+            Profil Profesional
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight">
+            Tentang Saya &amp; Latar Belakang
+          </h2>
+          <p class="text-base text-gray-600">
+            Mengenal lebih dekat dedikasi, keterampilan, dan orientasi kerja saya sebagai Content Editor untuk UMKM.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+          <!-- Identity Summary Card (Sesuai Prompt) -->
+          <div
+            class="lg:col-span-5 bg-gradient-to-b from-lavender-50/80 to-white p-8 rounded-3xl border border-lavender-200 shadow-card space-y-6">
+            <div class="flex items-center gap-4 pb-6 border-b border-lavender-200">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-lavender-300 shadow-soft bg-gradient-to-tr from-lavender-100 to-white shrink-0">
+                <img src="./public/assets/profile.jpg" alt="Muhammad Rizki Ardhana"
+                  class="w-full h-full object-cover object-[center_20%]" />
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-brand-deep">Muhammad Rizki Ardhana</h3>
+                <p class="text-sm font-semibold text-lavender-700">Junior Content Editor</p>
+                <span class="inline-block mt-1 text-xs text-gray-500 font-medium">MIX Academy Batch 3 • 2026</span>
+              </div>
+            </div>
+
+            <!-- Formal Data Specification -->
+            <div class="space-y-4 text-sm">
+              <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                <span class="text-gray-500 font-medium">Nama Lengkap</span>
+                <span class="font-bold text-gray-900">Muhammad Rizki Ardhana</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                <span class="text-gray-500 font-medium">Posisi</span>
+                <span class="font-bold text-lavender-800">Junior Content Editor</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                <span class="text-gray-500 font-medium">Pendidikan</span>
+                <span class="font-bold text-gray-900">Sarjana Teknik Informatika (S.Kom.)</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                <span class="text-gray-500 font-medium">Pelatihan</span>
+                <span class="font-bold text-lavender-700 text-right">MIX Academy Batch 3 – 2026</span>
+              </div>
+              <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                <span class="text-gray-500 font-medium">Fokus Keahlian</span>
+                <span class="font-bold text-gray-900">Feed, Story, Reels, Copywriting</span>
+              </div>
+              <div class="flex justify-between items-center py-2">
+                <span class="text-gray-500 font-medium">Status</span>
+                <span
+                  class="inline-flex items-center gap-1 font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full text-xs">
+                  Siap Berkolaborasi
+                </span>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="#contact"
+                class="w-full inline-flex items-center justify-center gap-2 bg-lavender-700 hover:bg-lavender-800 text-white font-semibold text-sm py-3 px-6 rounded-xl transition-all">
+                <span>Diskusikan Kebutuhan Konten</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Description & Values (Teks Persis Prompt) -->
+          <div class="lg:col-span-7 space-y-6">
+
+            <div class="bg-white p-8 rounded-3xl border border-brand-border shadow-card space-y-6">
+              <h3 class="text-xl font-bold text-brand-deep flex items-center gap-2">
+                <i data-lucide="user-check" class="w-5 h-5 text-lavender-600"></i>
+                <span>Deskripsi Profil</span>
+              </h3>
+
+              <!-- Verbatim Paragraph 1 -->
+              <p class="text-gray-700 leading-relaxed text-base">
+                "Saya merupakan peserta pelatihan MIX Academy Batch 3 jurusan Konten Editor. Saya memiliki ketertarikan
+                dalam pembuatan konten digital, desain visual, editing video, dan pengembangan konten promosi untuk
+                UMKM."
+              </p>
+
+              <!-- Verbatim Paragraph 2 -->
+              <p class="text-gray-700 leading-relaxed text-base">
+                "Saya terbiasa mengerjakan proyek simulasi pembuatan desain Feed dan Story menggunakan Canva, mengedit
+                video Reels menggunakan CapCut, serta mengolah foto produk menjadi katalog promosi."
+              </p>
+
+              <!-- Verbatim Paragraph 3 -->
+              <p
+                class="text-gray-700 leading-relaxed text-base font-semibold text-lavender-900 bg-lavender-50 p-4 rounded-xl border border-lavender-100">
+                "Saya terus mengembangkan kemampuan kreatif dan terbuka untuk kesempatan kolaborasi."
+              </p>
+            </div>
+
+            <!-- Value Propositions for Clients -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-5 rounded-2xl bg-lavender-50/50 border border-lavender-100 space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-lavender-700 shadow-sm">
+                  <i data-lucide="target" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-sm">Brief-Oriented</h4>
+                <p class="text-xs text-gray-600 leading-normal">Mendesain sesuai tujuan bisnis dan USP produk, bukan
+                  sekadar visual estetik tanpa arah.</p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-lavender-50/50 border border-lavender-100 space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-lavender-700 shadow-sm">
+                  <i data-lucide="palette" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-sm">Visual Consistency</h4>
+                <p class="text-xs text-gray-600 leading-normal">Menjaga palet warna, tipografi, dan gaya visual tetap
+                  konsisten di seluruh kanal brand.</p>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-lavender-50/50 border border-lavender-100 space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-lavender-700 shadow-sm">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-bold text-gray-900 text-sm">Modern Workflow</h4>
+                <p class="text-xs text-gray-600 leading-normal">Kombinasi Canva, CapCut, dan AI tools untuk eksekusi
+                  yang efisien dan rapi.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION C: SKILLS & TOOLS ================= -->
+    <section id="skills" class="py-20 md:py-28 bg-brand-soft border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <span
+            class="text-xs font-bold uppercase tracking-wider text-lavender-600 bg-lavender-100 px-3.5 py-1.5 rounded-full border border-lavender-200">
+            Kompetensi &amp; Perangkat
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight">
+            Skills &amp; Tools yang Dikuasai
+          </h2>
+          <p class="text-base text-gray-600">
+            Keterampilan teknis dan perangkat kerja yang saya gunakan untuk memproduksi konten berkualitas tinggi secara
+            konsisten.
+          </p>
+          <div class="inline-flex items-center gap-1.5 text-xs text-gray-500 italic pt-1">
+            <i data-lucide="info" class="w-3.5 h-3.5 text-lavender-600"></i>
+            <span>Sesuai standar portofolio profesional: Tanpa persentase fiktif, disajikan berdasarkan fokus keahlian
+              nyata.</span>
+          </div>
+        </div>
+
+        <!-- 10 Skills Grid (Sesuai Persis 10 Poin Prompt) -->
+        <div class="mb-16">
+          <h3 class="text-xl font-bold text-brand-deep mb-6 flex items-center gap-2">
+            <i data-lucide="check-circle" class="w-5 h-5 text-lavender-600"></i>
+            <span>Daftar Keterampilan (Skills)</span>
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- Skill 1 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="calendar" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Strategy</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">1. Content Planning</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Menyusun pilar konten (content pillars), kalender
+                editorial mingguan/bulanan, dan jadwal tayang yang terstruktur.</p>
+            </div>
+
+            <!-- Skill 2 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="file-text" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Briefing</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">2. Content Brief</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Merumuskan brief kreatif jelas mencakup tujuan, target
+                audiens, panduan visual, angle hook, dan call-to-action.</p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Writing</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">3. Copywriting</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Menulis headline memikat, copy isi persuasif, dan CTA
+                jelas yang mendorong tindakan pembeli secara etis.</p>
+            </div>
+
+            <!-- Skill 4 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="layers" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Visual
+                  Design</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">4. Graphic Design</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Menerapkan tata letak seimbang, tipografi modern, kontras
+                warna yang nyaman, serta hierarki visual yang jelas.</p>
+            </div>
+
+            <!-- Skill 5 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="image" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Instagram
+                  4:5</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">5. Instagram Feed Design</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Mendesain single post maupun carousel Instagram ukuran
+                1080×1350 px dengan konsistensi identitas brand.</p>
+            </div>
+
+            <!-- Skill 6 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="smartphone" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Instagram
+                  9:16</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">6. Instagram Story Design</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Mendesain format vertikal 1080×1920 px dengan ruang
+                interaktif untuk stiker polling, countdown, dan link pembelian.</p>
+            </div>
+
+            <!-- Skill 7 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="video" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Video
+                  9:16</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">7. Reels Video Editing</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Mengolah footage video vertikal 15–20 detik dengan hook
+                pembuka kuat, transisi rapi, teks dinamis, dan sinkronisasi audio.</p>
+            </div>
+
+            <!-- Skill 8 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="book-open" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Catalog</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">8. Product Catalog Design</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Menyusun layout katalog produk bersih dan teratur yang
+                memuat foto, nama produk, spesifikasi, dan daftar harga.</p>
+            </div>
+
+            <!-- Skill 9 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Identity</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">9. Visual Branding</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Menerapkan konsistensi mood visual, palet warna, dan
+                elemen grafis agar identitas brand mudah diingat calon klien.</p>
+            </div>
+
+            <!-- Skill 10 -->
+            <div
+              class="bg-white p-6 rounded-2xl border border-brand-border shadow-card hover:border-lavender-400 hover:shadow-soft transition-all md:col-span-2 lg:col-span-3">
+              <div class="flex items-center justify-between mb-3">
+                <div class="w-10 h-10 rounded-xl bg-lavender-100 text-lavender-700 flex items-center justify-center">
+                  <i data-lucide="cpu" class="w-5 h-5"></i>
+                </div>
+                <span
+                  class="text-[11px] font-bold text-lavender-700 bg-lavender-50 px-2.5 py-1 rounded-full uppercase">Efficiency</span>
+              </div>
+              <h4 class="font-bold text-gray-900 text-base mb-1">10. AI-Assisted Content Creation</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Memanfaatkan kecerdasan buatan secara produktif untuk
+                riset kata kunci, brainstorming variasi hook, ide sudut pandang konten promosi, dan penyempurnaan
+                copywriting.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3 Core Tools Showcase (Sesuai Persis Prompt) -->
+        <div>
+          <h3 class="text-xl font-bold text-brand-deep mb-6 flex items-center gap-2">
+            <i data-lucide="wrench" class="w-5 h-5 text-lavender-600"></i>
+            <span>Tools Kerja Utama</span>
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Tool 1: Canva -->
+            <div
+              class="bg-white p-8 rounded-3xl border border-brand-border shadow-card hover:shadow-soft transition-all relative overflow-hidden group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-600 to-teal-400 text-white flex items-center justify-center font-bold text-xl mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i data-lucide="layout-grid" class="w-7 h-7"></i>
+              </div>
+              <span class="inline-block text-xs font-bold text-blue-700 bg-blue-50 px-3 py-1 rounded-full mb-2">Desain
+                Grafis &amp; Tata Letak</span>
+              <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Canva</h4>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Digunakan untuk mendesain Feed Instagram single &amp; carousel, Instagram Story vertikal, banner
+                promosi, serta penyusunan katalog produk UMKM.
+              </p>
+              <div class="pt-4 border-t border-gray-100 flex flex-wrap gap-2 text-xs font-semibold text-gray-700">
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Feed 4:5</span>
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Story 9:16</span>
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Katalog Produk</span>
+              </div>
+            </div>
+
+            <!-- Tool 2: CapCut -->
+            <div
+              class="bg-white p-8 rounded-3xl border border-brand-border shadow-card hover:shadow-soft transition-all relative overflow-hidden group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-gray-900 to-gray-700 text-white flex items-center justify-center font-bold text-xl mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i data-lucide="scissors" class="w-7 h-7"></i>
+              </div>
+              <span class="inline-block text-xs font-bold text-gray-900 bg-gray-100 px-3 py-1 rounded-full mb-2">Editing
+                Video Pendek</span>
+              <h4 class="text-2xl font-extrabold text-gray-900 mb-2">CapCut</h4>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Digunakan untuk memotong footage (trimming), menambahkan transisi halus, teks subtitle dinamis, efek
+                visual, dan sinkronisasi audio beat pada video Reels.
+              </p>
+              <div class="pt-4 border-t border-gray-100 flex flex-wrap gap-2 text-xs font-semibold text-gray-700">
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Reels 9:16</span>
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Hook 3s</span>
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Dynamic Subtitle</span>
+              </div>
+            </div>
+
+            <!-- Tool 3: AI Tools -->
+            <div
+              class="bg-white p-8 rounded-3xl border border-brand-border shadow-card hover:shadow-soft transition-all relative overflow-hidden group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-lavender-600 to-brand-deep text-white flex items-center justify-center font-bold text-xl mb-6 shadow-sm group-hover:scale-105 transition-transform">
+                <i data-lucide="sparkles" class="w-7 h-7"></i>
+              </div>
+              <span
+                class="inline-block text-xs font-bold text-lavender-700 bg-lavender-100 px-3 py-1 rounded-full mb-2">Akselerator
+                Ide &amp; Riset</span>
+              <h4 class="text-2xl font-extrabold text-gray-900 mb-2">AI Tools</h4>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Digunakan secara etis sebagai partner brainstorming dalam menyusun konsep brief, meriset target audiens,
+                dan membuat alternatif copywriting yang bervariasi.
+              </p>
+              <div class="pt-4 border-t border-gray-100 flex flex-wrap gap-2 text-xs font-semibold text-gray-700">
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Prompt Engineering</span>
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Content Angle</span>
+                <span class="bg-gray-100 px-2.5 py-1 rounded-lg">Workflow Boost</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION D: PORTFOLIO – DUMMY PROJECT UMKM ================= -->
+    <section id="dummy-project" class="py-20 md:py-28 bg-white border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span id="brandBadgeHeader"
+            class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+            Karya Utama Portofolio
+          </span>
+          <h2 id="brandTitleHeader" class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight">
+            UMKM HASANI Herbal Nabawi
+          </h2>
+          <p id="brandSubHeader" class="text-base text-gray-600">
+            Satu proyek kampanye terpadu untuk UMKM suplemen herbal nabawi terpercaya dengan identitas brand yang
+            konsisten, meliputi Feed Instagram, Story, Reels, Copywriting, dan Katalog Produk.
+          </p>
+        </div>
+
+        <!-- ================= BRAND VIEW: HASANI HERBAL NABAWI ================= -->
+        <div id="brandHasaniView" class="space-y-12">
+          <!-- Mandatory Disclaimer Box (HASANI) -->
+          <div
+            class="bg-amber-50/80 border-2 border-amber-300/80 rounded-2xl p-5 sm:p-6 text-amber-950 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-amber-200 text-amber-900 flex items-center justify-center shrink-0">
+              <i data-lucide="shield-alert" class="w-6 h-6"></i>
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-extrabold text-sm sm:text-base text-amber-900">Keterangan Resmi Status Proyek
+                (Disclaimer):</h4>
+              <p class="text-xs sm:text-sm text-amber-900/90 leading-relaxed">
+                <strong>Dummy Project – Social Media Content Campaign for HASANI Herbal Nabawi.</strong> Proyek ini
+                merupakan karya simulasi &amp; pengembangan kampanye kreatif digital yang dibuat secara khusus untuk
+                memenuhi standar penilaian
+                portofolio akhir MIX Academy Batch 3 – Konten Editor 2026, bukan materi klaim medis sepihak.
+              </p>
+            </div>
+          </div>
+
+          <!-- Brand Identity Showcase Card (HASANI) -->
+          <div
+            class="bg-gradient-to-br from-emerald-50/70 via-white to-amber-50/40 p-8 sm:p-10 rounded-3xl border border-emerald-200 shadow-soft">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+              <div class="lg:col-span-5 space-y-4">
+                <!-- Authentic Logo Badge -->
+                <div
+                  class="inline-flex items-center gap-3.5 bg-white p-2.5 pr-5 rounded-2xl shadow-sm border border-emerald-200/80">
+                  <img src="./public/assets/hasani/hasani-logo-thumb.jpeg" alt="HASANI Herbal Nabawi Brand Logo"
+                    onclick="openModal('Brand Logo: HASANI Herbal Nabawi', './public/assets/hasani/hasani-logo.jpeg', 'Official Brand Identity Logo untuk HASANI Herbal Nabawi: Formulasi Habbat 2 in 1 (Habbatussauda + Propolis) 100 Soft Capsule. Desain archway emas dengan siluet tanaman herbal habbatussauda.')"
+                    class="h-14 w-14 object-cover rounded-xl border border-amber-200 cursor-pointer hover:scale-105 transition-transform" />
+                  <div>
+                    <span class="block text-sm font-extrabold text-emerald-950 uppercase tracking-wide">HASANI HERBAL
+                      NABAWI</span>
+                    <span class="block text-[11px] text-amber-700 font-semibold">Habbat 2 in 1 • Habbatussauda +
+                      Propolis</span>
+                  </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-emerald-950">Identitas Brand UMKM</h3>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                  <strong>HASANI Herbal Nabawi</strong> adalah brand UMKM terpercaya di bidang produk herbal alami dan
+                  Thibbun Nabawi modern. Mengusung formulasi unggulan <strong>Habbat 2 in 1</strong> (kombinasi sinergis
+                  Habbatussauda murni &amp; Brazilian Propolis) dalam bentuk 100 soft capsule untuk memelihara stamina,
+                  meningkatkan imunitas keluarga, dan mengembalikan vitalitas tubuh aktif.
+                </p>
+
+                <div class="space-y-2.5 text-xs text-gray-800">
+                  <div class="flex items-start gap-2">
+                    <span class="font-bold text-emerald-900 w-32 shrink-0">Bidang Usaha:</span>
+                    <span>Suplemen Herbal Nabawi &amp; Kesehatan Alami</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="font-bold text-emerald-900 w-32 shrink-0">Konsep Visual:</span>
+                    <span>Natural Herbal, Islamic Heritage, Royal Gold, Clean &amp; Trustworthy</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="font-bold text-emerald-900 w-32 shrink-0">Strategi Kampanye:</span>
+                    <span>"Solusi Sehat Alami Setiap Hari • Rahasia Vitalitas &amp; Imunitas Keluarga"</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="font-bold text-emerald-900 w-32 shrink-0">Legalitas &amp; BPOM:</span>
+                    <span
+                      class="inline-flex items-center gap-1 font-semibold text-emerald-800 bg-emerald-100/70 px-2 py-0.5 rounded">
+                      <i data-lucide="check-circle-2" class="w-3 h-3 text-emerald-700"></i>
+                      BPOM TR233044221 • Sertifikat Halal Indonesia
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Color Palette Presentation (HASANI) -->
+              <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl border border-emerald-100 shadow-sm space-y-4">
+                <h4 class="font-bold text-gray-900 text-sm flex items-center justify-between">
+                  <span class="flex items-center gap-2">
+                    <i data-lucide="palette" class="w-4 h-4 text-emerald-700"></i>
+                    <span>Palet Warna Resmi Kampanye (Brand Colors)</span>
+                  </span>
+                  <span
+                    class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    HASANI Official Palette
+                  </span>
+                </h4>
+
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+
+                  <div class="text-center space-y-2">
+                    <div
+                      class="w-full h-16 rounded-xl bg-[#0D5C3A] shadow-sm border border-emerald-900/10 flex items-end justify-center pb-1">
+                      <span class="text-[10px] font-bold text-white/90">#0D5C3A</span>
+                    </div>
+                    <div>
+                      <span class="block text-xs font-bold text-gray-900">Hijau Herbal</span>
+                      <span class="block text-[11px] text-gray-500 font-mono">#0D5C3A</span>
+                      <span class="text-[10px] text-emerald-700 font-semibold">Identitas Utama</span>
+                    </div>
+                  </div>
+
+                  <div class="text-center space-y-2">
+                    <div
+                      class="w-full h-16 rounded-xl bg-[#C59B27] shadow-sm border border-amber-500/20 flex items-end justify-center pb-1">
+                      <span class="text-[10px] font-bold text-white/90">#C59B27</span>
+                    </div>
+                    <div>
+                      <span class="block text-xs font-bold text-gray-900">Emas Nabawi</span>
+                      <span class="block text-[11px] text-gray-500 font-mono">#C59B27</span>
+                      <span class="text-[10px] text-amber-700 font-semibold">Aksen Logo &amp; Gold</span>
+                    </div>
+                  </div>
+
+                  <div class="text-center space-y-2">
+                    <div
+                      class="w-full h-16 rounded-xl bg-[#E8F5E9] shadow-sm border border-emerald-200 flex items-end justify-center pb-1">
+                      <span class="text-[10px] font-bold text-emerald-900/80">#E8F5E9</span>
+                    </div>
+                    <div>
+                      <span class="block text-xs font-bold text-gray-900">Soft Mint</span>
+                      <span class="block text-[11px] text-gray-500 font-mono">#E8F5E9</span>
+                      <span class="text-[10px] text-emerald-800 font-semibold">Background Sub</span>
+                    </div>
+                  </div>
+
+                  <div class="text-center space-y-2">
+                    <div
+                      class="w-full h-16 rounded-xl bg-[#FFFFFF] shadow-sm border border-gray-200 flex items-end justify-center pb-1">
+                      <span class="text-[10px] font-bold text-gray-700">#FFFFFF</span>
+                    </div>
+                    <div>
+                      <span class="block text-xs font-bold text-gray-900">Putih Bersih</span>
+                      <span class="block text-[11px] text-gray-500 font-mono">#FFFFFF</span>
+                      <span class="text-[10px] text-gray-700 font-semibold">Background Utama</span>
+                    </div>
+                  </div>
+
+                  <div class="text-center space-y-2">
+                    <div
+                      class="w-full h-16 rounded-xl bg-[#0F281E] shadow-sm border border-emerald-950 flex items-end justify-center pb-1">
+                      <span class="text-[10px] font-bold text-white/90">#0F281E</span>
+                    </div>
+                    <div>
+                      <span class="block text-xs font-bold text-gray-900">Deep Forest</span>
+                      <span class="block text-[11px] text-gray-500 font-mono">#0F281E</span>
+                      <span class="text-[10px] text-emerald-900 font-semibold">Elemen &amp; Teks</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <p class="text-xs text-gray-500 pt-2 border-t border-emerald-100 leading-relaxed">
+                  💡 <em>Konsistensi palet herbal-emas ini diterapkan di seluruh materi: poster Feed Instagram 4:5,
+                    Story vertikal 9:16, video Reels CapCut, serta layout katalog promosi produk HASANI.</em>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION E: COPYWRITING PROJECT ================= -->
+    <section id="copywriting" class="py-20 md:py-28 bg-brand-soft border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span id="copyBadgeHeader"
+            class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3.5 py-1.5 rounded-full border border-emerald-200">
+            Penulisan Naskah Iklan
+          </span>
+          <h2 id="copyTitleHeader" class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight">
+            Copywriting Project
+          </h2>
+          <p id="copySubHeader" class="text-base text-gray-600">
+            3 naskah copywriting promosi produk UMKM HASANI Herbal Nabawi dengan struktur wajib: Headline, Isi Promosi,
+            dan Call to Action (CTA). Berbahasa Indonesia persuasif tanpa klaim palsu.
+          </p>
+        </div>
+
+        <!-- ================= COPYWRITING VIEW: HASANI HERBAL NABAWI ================= -->
+        <div id="copyHasaniView" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+          <!-- HASANI Copywriting 1 -->
+          <div
+            class="bg-white rounded-3xl p-8 border border-emerald-100 shadow-card flex flex-col justify-between hover:shadow-soft hover:border-emerald-400 transition-all">
+            <div class="space-y-6">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                  Brief 01 • Promo Harga Spesial
+                </span>
+                <span class="text-xs text-emerald-700 font-semibold">Tanya Jawab / Q&amp;A</span>
+              </div>
+
+              <!-- 1. Headline (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-emerald-700 uppercase tracking-wider">1. Headline</span>
+                <h3 class="text-lg font-extrabold text-gray-900 leading-snug">
+                  "Rp99 Ribu Untuk Jaga Stamina? Beneran..?"
+                </h3>
+              </div>
+
+              <!-- 2. Isi Promosi (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-emerald-700 uppercase tracking-wider">2. Isi Promosi</span>
+                <div
+                  class="text-sm text-gray-700 leading-relaxed bg-emerald-50/40 p-4 rounded-xl border border-emerald-100 space-y-2">
+                  <p>
+                    Suplemen herbal <strong>HASANI Habbatussauda 2 in 1</strong> (Habbatussauda + Brazilian Propolis)
+                    dalam bentuk 100 soft capsule.
+                  </p>
+                  <p>
+                    Harga promo spesial turun dari <span class="line-through text-gray-400">Rp120.000</span> menjadi
+                    <strong>Rp99.000/botol</strong>. Paket hemat: Beli 2 botol <strong>Rp189.000</strong> + Gratis
+                    Sachet Biotawa + Gratis Ongkir.
+                  </p>
+                  <p class="text-xs text-emerald-900 font-medium pt-1 border-t border-emerald-200/60">
+                    ✓ Meningkatkan daya tahan tubuh &bull; Melancarkan pencernaan &bull; Terdaftar BPOM TR233044221
+                    (Rating 4.8).
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3. Call to Action (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-emerald-700 uppercase tracking-wider">3. Call to Action
+                  (CTA)</span>
+                <div
+                  class="p-3.5 bg-emerald-50 rounded-xl border border-emerald-200 text-xs font-bold text-emerald-950 flex items-center gap-2">
+                  <i data-lucide="shopping-bag" class="w-4 h-4 text-emerald-700 shrink-0"></i>
+                  <span>"Pesan di yubi.id/tokobaik atau WhatsApp 0858-4698-6014"</span>
+                </div>
+              </div>
+
+              <!-- Brief Specifications -->
+              <div class="pt-4 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                <p><strong>Target:</strong> Orang dewasa &amp; keluarga yang ingin menjaga stamina secara praktis &amp;
+                  hemat.</p>
+                <p><strong>Tone of Voice:</strong> Persuasif, interaktif, merangsang rasa penasaran, dan terpercaya.</p>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <button onclick="copyToClipboard('copyHasani1', this)"
+                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs py-2.5 px-4 rounded-xl transition-all">
+                <i data-lucide="copy" class="w-4 h-4 text-emerald-700"></i>
+                <span>Salin Naskah Copywriting</span>
+              </button>
+              <textarea id="copyHasani1" class="hidden">Headline: Rp99 Ribu Untuk Jaga Stamina? Beneran..?
+
+Isi Promosi:
+Suplemen herbal HASANI Habbatussauda 2 in 1 (Habbatussauda + Brazilian Propolis) dalam bentuk 100 soft capsule.
+Harga promo spesial turun dari Rp120.000 menjadi Rp99.000/botol.
+Paket hemat: Beli 2 botol Rp189.000 + Gratis Sachet Biotawa + Gratis Ongkir.
+Keunggulan: Meningkatkan daya tahan tubuh, melancarkan pencernaan, nutrisi alami & aman, serta terdaftar BPOM (TR233044221) dengan rating 4.8 dari ratusan pembeli.
+
+Call to Action (CTA):
+Pesan di yubi.id/tokobaik atau WhatsApp 0858-4698-6014.</textarea>
+            </div>
+          </div>
+
+          <!-- HASANI Copywriting 2 -->
+          <div
+            class="bg-white rounded-3xl p-8 border border-emerald-100 shadow-card flex flex-col justify-between hover:shadow-soft hover:border-emerald-400 transition-all">
+            <div class="space-y-6">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                  Brief 02 • Vitalitas &amp; Energi
+                </span>
+                <span class="text-xs text-amber-700 font-semibold">Aktivitas Fisik</span>
+              </div>
+
+              <!-- 1. Headline (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-amber-700 uppercase tracking-wider">1. Headline</span>
+                <h3 class="text-lg font-extrabold text-gray-900 leading-snug">
+                  "Kembalikan Vitalitas &amp; Jaga Stamina!"
+                </h3>
+              </div>
+
+              <!-- 2. Isi Promosi (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-amber-700 uppercase tracking-wider">2. Isi Promosi</span>
+                <div
+                  class="text-sm text-gray-700 leading-relaxed bg-amber-50/40 p-4 rounded-xl border border-amber-200/80 space-y-2">
+                  <p>
+                    Rahasia tubuh sehat &amp; aktif setiap hari dengan <strong>100% herbal alami</strong>. Formulasi
+                    Habbat 2 in 1 (Habbatussauda + Brazilian Propolis).
+                  </p>
+                  <p>
+                    Manfaat utama: Meningkatkan daya tahan tubuh, menjaga kesehatan jantung, kaya antioksidan alami,
+                    aman, dan terpercaya untuk seluruh keluarga.
+                  </p>
+                  <p class="text-xs text-amber-900 font-medium pt-1 border-t border-amber-200/70">
+                    ⚡ Layanan belanja: Bisa COD (Bayar di Tempat) &amp; Gratis Ongkir ke seluruh Indonesia.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3. Call to Action (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-amber-700 uppercase tracking-wider">3. Call to Action
+                  (CTA)</span>
+                <div
+                  class="p-3.5 bg-amber-50 rounded-xl border border-amber-200 text-xs font-bold text-amber-950 flex items-center gap-2">
+                  <i data-lucide="zap" class="w-4 h-4 text-amber-700 shrink-0"></i>
+                  <span>"Beli Sekarang &gt; (Bisa COD &amp; Gratis Ongkir)"</span>
+                </div>
+              </div>
+
+              <!-- Brief Specifications -->
+              <div class="pt-4 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                <p><strong>Target:</strong> Pria/wanita dewasa &amp; masyarakat aktif yang butuh tambahan energi.</p>
+                <p><strong>Tone of Voice:</strong> Energik, memotivasi, solutif, dan meyakinkan.</p>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <button onclick="copyToClipboard('copyHasani2', this)"
+                class="w-full inline-flex items-center justify-center gap-2 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 font-bold text-xs py-2.5 px-4 rounded-xl transition-all">
+                <i data-lucide="copy" class="w-4 h-4 text-amber-700"></i>
+                <span>Salin Naskah Copywriting</span>
+              </button>
+              <textarea id="copyHasani2" class="hidden">Headline: Kembalikan Vitalitas & Jaga Stamina!
+
+Isi Promosi:
+Rahasia tubuh sehat & aktif setiap hari dengan 100% herbal alami.
+Formulasi Habbat 2 in 1 (Habbatussauda + Propolis).
+Manfaat utama: Meningkatkan daya tahan tubuh, menjaga kesehatan jantung, kaya antioksidan alami, aman, dan terpercaya untuk seluruh keluarga.
+Layanan belanja: Bisa COD & Gratis Ongkir.
+
+Call to Action (CTA):
+Beli Sekarang > (Layanan Belanja: Bisa COD & Gratis Ongkir)</textarea>
+            </div>
+          </div>
+
+          <!-- HASANI Copywriting 3 -->
+          <div
+            class="bg-white rounded-3xl p-8 border border-emerald-100 shadow-card flex flex-col justify-between hover:shadow-soft hover:border-emerald-400 transition-all">
+            <div class="space-y-6">
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                  Brief 03 • Imunitas Keluarga
+                </span>
+                <span class="text-xs text-emerald-700 font-semibold">Bundling Hemat &amp; BPOM</span>
+              </div>
+
+              <!-- 1. Headline (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-emerald-700 uppercase tracking-wider">1. Headline</span>
+                <h3 class="text-lg font-extrabold text-gray-900 leading-snug">
+                  "Jaga Stamina &amp; Imunitas Keluarga!"
+                </h3>
+              </div>
+
+              <!-- 2. Isi Promosi (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-emerald-700 uppercase tracking-wider">2. Isi Promosi</span>
+                <div
+                  class="text-sm text-gray-700 leading-relaxed bg-emerald-50/40 p-4 rounded-xl border border-emerald-100 space-y-2">
+                  <p>
+                    <strong>HASANI Herbal Nabawi</strong> - Solusi Sehat Alami Setiap Hari. Membantu menjaga stamina,
+                    melancarkan aliran darah, kaya antioksidan, 100% bahan herbal aman dikonsumsi harian.
+                  </p>
+                  <p>
+                    Promo Spesial Bundling: Hanya <strong>Rp99.000/botol</strong> (Coret Rp120.000) atau <strong>Paket 2
+                      Botol Rp189.000</strong>.
+                  </p>
+                  <p class="text-xs text-emerald-900 font-medium pt-1 border-t border-emerald-200/60">
+                    🛡️ Legalitas resmi: Bersertifikat Halal Indonesia &amp; Terdaftar BPOM RI TR233044221 (Isi 100 Soft
+                    Capsule).
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3. Call to Action (Wajib) -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-extrabold text-emerald-700 uppercase tracking-wider">3. Call to Action
+                  (CTA)</span>
+                <div
+                  class="p-3.5 bg-emerald-50 rounded-xl border border-emerald-200 text-xs font-bold text-emerald-950 flex items-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4 text-emerald-700 shrink-0"></i>
+                  <span>"Pesan Sekarang — WA: 0858-4690-6014 — IG: @hasani.herbal"</span>
+                </div>
+              </div>
+
+              <!-- Brief Specifications -->
+              <div class="pt-4 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                <p><strong>Target:</strong> Kepala keluarga / ibu rumah tangga yang peduli daya tahan tubuh keluarga.
+                </p>
+                <p><strong>Tone of Voice:</strong> Informatif, hangat, berorientasi keluarga, jaminan Halal &amp; BPOM.
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <button onclick="copyToClipboard('copyHasani3', this)"
+                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs py-2.5 px-4 rounded-xl transition-all">
+                <i data-lucide="copy" class="w-4 h-4 text-emerald-700"></i>
+                <span>Salin Naskah Copywriting</span>
+              </button>
+              <textarea id="copyHasani3" class="hidden">Headline: Jaga Stamina & Imunitas Keluarga!
+
+Isi Promosi:
+Hasani Herbal Nabawi - Solusi Sehat Alami Setiap Hari.
+Manfaat: Meningkatkan daya tahan tubuh, membantu menjaga stamina, melancarkan aliran darah, kaya antioksidan alami, 100% bahan herbal alami, aman dikonsumsi tiap hari.
+Promo Spesial Bundling & Gratis Ongkir: Hanya Rp99.000/botol (Coret Rp120.000) atau Paket 2 Botol: Rp189.000.
+Legalitas: Sudah bersertifikat Halal Indonesia & terdaftar BPOM TR233044221 (Isi 100 Soft Capsule).
+
+Call to Action (CTA):
+Beli Sekarang / Pesan Sekarang — WA: 0858-4690-6014 — IG: @hasani.herbal</textarea>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION F: INSTAGRAM FEED DESIGN ================= -->
+    <section id="feed-design" class="py-20 md:py-28 bg-white border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span
+            class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+            Karya Desain Grafis Canva
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight">
+            Instagram Feed Design
+          </h2>
+          <p class="text-base text-gray-600">
+            Koleksi karya desain feed Instagram untuk UMKM dengan komposisi visual profesional, penataan tipografi yang
+            rapi, penawaran harga menarik, dan kepatuhan standar regulasi BPOM &amp; Halal.
+          </p>
+        </div>
+
+        <!-- ================= CAMPAIGN: HASANI HERBAL NABAWI (3 POSTER FEED) ================= -->
+        <div id="hasaniFeedSection" class="space-y-8">
+
+          <!-- Hasani Campaign Highlight Banner -->
+          <div
+            class="bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50/70 border-2 border-emerald-300 rounded-3xl p-6 sm:p-8 text-emerald-950 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 shadow-sm">
+            <div class="space-y-2">
+              <div class="flex flex-wrap items-center gap-2.5">
+                <span
+                  class="text-xs font-black uppercase tracking-wider bg-emerald-700 text-white px-3 py-1 rounded-lg">
+                  Karya Desain Poster UMKM
+                </span>
+                <span class="text-sm font-extrabold text-emerald-900">
+                  HASANI Herbal Nabawi • Habbatussauda 2 in 1 (Habbatussauda + Brazilian Propolis)
+                </span>
+              </div>
+              <p class="text-xs sm:text-sm text-emerald-900/90 leading-relaxed max-w-3xl">
+                Rangkaian 3 poster Instagram Feed promosi suplemen herbal isi 100 soft capsule. Mengoptimalkan sudut
+                pandang (angles) promo harga spesial Rp99.000/botol, vitalitas &amp; kebugaran fisik, serta perlindungan
+                imunitas keluarga dengan legalitas resmi BPOM TR233044221 dan Sertifikat Halal Indonesia.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 shrink-0">
+              <span
+                class="text-xs font-bold bg-white text-emerald-800 px-3.5 py-2 rounded-xl border border-emerald-200 shadow-sm flex items-center gap-1.5">
+                <span class="text-amber-500">⭐</span> Rating 4.8 / 5.0 (Ratusan Pembeli)
+              </span>
+              <span
+                class="text-xs font-bold bg-white text-emerald-800 px-3.5 py-2 rounded-xl border border-emerald-200 shadow-sm">
+                ✓ BPOM &amp; Halal
+              </span>
+            </div>
+          </div>
+
+          <!-- Hasani 3 Posters Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Poster 1: Edisi Promo Harga Spesial -->
+            <div
+              class="bg-white rounded-3xl border-2 border-emerald-200 shadow-card overflow-hidden group hover:shadow-elevated hover:border-emerald-400 transition-all flex flex-col">
+              <!-- Instagram Mockup Header -->
+              <div class="p-4 border-b border-gray-100 flex items-center justify-between bg-white">
+                <div class="flex items-center gap-2.5">
+                  <div
+                    class="w-8 h-8 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-xs shadow-sm">
+                    HH
+                  </div>
+                  <div>
+                    <h3 class="text-xs font-bold text-gray-900 leading-tight flex items-center gap-1">
+                      hasani.herbal
+                      <span class="text-blue-500 text-[11px]">✓</span>
+                    </h3>
+                    <span class="text-[10px] text-gray-500">Official Store • Feed Poster 01</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-full">
+                  Promo Harga Spesial
+                </span>
+              </div>
+
+              <!-- Poster Visual Preview -->
+              <div class="relative bg-amber-50/50 overflow-hidden cursor-pointer"
+                onclick="openModal('Poster 1: Edisi Promo Harga Spesial', './public/assets/hasani/hasani-feed-1.jpeg', 'Headline: Rp99 Ribu Untuk Jaga Stamina? Beneran..? Suplemen herbal HASANI Habbatussauda 2 in 1 (Habbatussauda + Brazilian Propolis) isi 100 soft capsule. Promo Rp99.000/botol (Normal Rp120.000). Paket 2 botol Rp189.000 + Gratis Biotawa + Gratis Ongkir. BPOM TR233044221 &amp; Rating 4.8.')">
+                <img src="./public/assets/hasani/hasani-feed-1.jpeg" alt="Poster 1 HASANI Herbal Nabawi Promo Spesial"
+                  width="1792" height="2400" loading="lazy" style="aspect-ratio: 1792 / 2400;"
+                  class="w-full h-auto aspect-[1792/2400] aspect-feed-hasani object-contain group-hover:scale-[1.02] transition-transform duration-300 block" />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span
+                    class="bg-white/95 text-gray-900 font-bold text-xs px-4 py-2 rounded-full shadow-lg flex items-center gap-1.5">
+                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Klik untuk Perbesar (1792×2400)
+                  </span>
+                </div>
+              </div>
+
+              <!-- Poster Marketing Content -->
+              <div class="p-5 space-y-3.5 bg-white flex-1 flex flex-col justify-between">
+                <div class="space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-amber-700">Headline
+                      Poster</span>
+                    <h4 class="font-extrabold text-gray-900 text-base leading-snug">
+                      "Rp99 Ribu Untuk Jaga Stamina? Beneran..?"
+                    </h4>
+                  </div>
+
+                  <!-- Price & Deal Box -->
+                  <div class="p-3 rounded-xl bg-amber-50/80 border border-amber-200 text-xs space-y-1">
+                    <div class="flex items-center justify-between">
+                      <span class="text-gray-500 line-through">Rp 120.000</span>
+                      <span class="font-black text-amber-900 text-sm">Rp 99.000/botol</span>
+                    </div>
+                    <div class="text-[11px] text-amber-950 font-semibold pt-1 border-t border-amber-200">
+                      🎁 Beli 2 botol Rp 189.000 + Gratis Biotawa + Gratis Ongkir
+                    </div>
+                    <div class="text-[10px] text-gray-600 pt-0.5">
+                      ✓ BPOM TR233044221 • Rating 4.8 dari ratusan pembeli
+                    </div>
+                  </div>
+
+                  <!-- Isi Promosi -->
+                  <div class="space-y-1 text-xs text-gray-600 leading-relaxed">
+                    <p>Suplemen herbal HASANI Habbatussauda 2 in 1 (Habbatussauda + Brazilian Propolis) dalam bentuk 100
+                      soft capsule. Meningkatkan daya tahan tubuh, melancarkan pencernaan, dengan nutrisi alami &amp;
+                      aman.</p>
+                  </div>
+
+                  <!-- Call to Action -->
+                  <div
+                    class="p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 font-bold flex items-center justify-between gap-2">
+                    <span class="truncate">CTA: Pesan di yubi.id/tokobaik atau WA 0858-4698-6014</span>
+                    <a href="https://wa.me/6285846986014?text=Halo%20Hasani%20Herbal,%20saya%20ingin%20pesan%20promo%20Habbatussauda%20Rp99.000"
+                      target="_blank" rel="noopener noreferrer"
+                      class="text-emerald-700 hover:text-emerald-900 shrink-0 underline">
+                      Hubungi ➔
+                    </a>
+                  </div>
+
+                  <!-- Target & Tone -->
+                  <div class="pt-2 border-t border-gray-100 space-y-1 text-[11px] text-gray-500">
+                    <p><strong>Target:</strong> Orang dewasa &amp; keluarga yang ingin jaga stamina hemat.</p>
+                    <p><strong>Tone:</strong> Persuasif, interaktif, merangsang rasa penasaran &amp; terpercaya.</p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500 font-medium">
+                  <span class="inline-flex items-center gap-1 font-semibold text-emerald-800"><i
+                      data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Pas 1792×2400 px (HD
+                    Asli)</span>
+                  <button onclick="copyToClipboard('copyHasani1', this)"
+                    class="text-emerald-700 hover:text-emerald-800 font-bold flex items-center gap-1">
+                    <i data-lucide="copy" class="w-3.5 h-3.5"></i> Salin Copy
+                  </button>
+                  <textarea id="copyHasani1" class="hidden">Headline: Rp99 Ribu Untuk Jaga Stamina? Beneran..?
+
+Isi Promosi:
+- Suplemen herbal HASANI Habbatussauda 2 in 1 (Habbatussauda + Brazilian Propolis) dalam bentuk 100 soft capsule.
+- Harga promo spesial turun dari Rp120.000 menjadi Rp99.000/botol.
+- Paket hemat: Beli 2 botol Rp189.000 + Gratis Sachet Biotawa + Gratis Ongkir.
+- Keunggulan: Meningkatkan daya tahan tubuh, melancarkan pencernaan, nutrisi alami & aman, serta terdaftar BPOM (TR233044221) dengan rating 4.8 dari ratusan pembeli.
+
+Call to Action (CTA): Pesan di yubi.id/tokobaik atau WhatsApp 0858-4698-6014.
+Target: Orang dewasa dan keluarga yang ingin menjaga stamina secara praktis dan hemat.
+Tone of Voice: Persuasif, interaktif, merangsang rasa penasaran (efek kontras harga), dan terpercaya.</textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poster 2: Edisi Vitalitas & Aktivitas Fisik -->
+            <div
+              class="bg-white rounded-3xl border-2 border-emerald-200 shadow-card overflow-hidden group hover:shadow-elevated hover:border-emerald-400 transition-all flex flex-col">
+              <!-- Instagram Mockup Header -->
+              <div class="p-4 border-b border-gray-100 flex items-center justify-between bg-white">
+                <div class="flex items-center gap-2.5">
+                  <div
+                    class="w-8 h-8 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-xs shadow-sm">
+                    HH
+                  </div>
+                  <div>
+                    <h3 class="text-xs font-bold text-gray-900 leading-tight flex items-center gap-1">
+                      hasani.herbal
+                      <span class="text-blue-500 text-[11px]">✓</span>
+                    </h3>
+                    <span class="text-[10px] text-gray-500">Official Store • Feed Poster 02</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold bg-emerald-100 text-emerald-900 px-2.5 py-0.5 rounded-full">
+                  Vitalitas &amp; Fisik
+                </span>
+              </div>
+
+              <!-- Poster Visual Preview -->
+              <div class="relative bg-emerald-50/50 overflow-hidden cursor-pointer"
+                onclick="openModal('Poster 2: Edisi Vitalitas &amp; Aktivitas Fisik', './public/assets/hasani/hasani-feed-2.jpeg', 'Headline: Kembalikan Vitalitas &amp; Jaga Stamina! Rahasia tubuh sehat &amp; aktif setiap hari dengan 100% herbal alami. Formulasi Habbat 2 in 1 (Habbatussauda + Propolis). Meningkatkan daya tahan tubuh, menjaga kesehatan jantung, kaya antioksidan alami. Layanan belanja: Bisa COD &amp; Gratis Ongkir.')">
+                <img src="./public/assets/hasani/hasani-feed-2.jpeg" alt="Poster 2 HASANI Herbal Nabawi Vitalitas"
+                  width="1792" height="2400" loading="lazy" style="aspect-ratio: 1792 / 2400;"
+                  class="w-full h-auto aspect-[1792/2400] aspect-feed-hasani object-contain group-hover:scale-[1.02] transition-transform duration-300 block" />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span
+                    class="bg-white/95 text-gray-900 font-bold text-xs px-4 py-2 rounded-full shadow-lg flex items-center gap-1.5">
+                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Klik untuk Perbesar (1792×2400)
+                  </span>
+                </div>
+              </div>
+
+              <!-- Poster Marketing Content -->
+              <div class="p-5 space-y-3.5 bg-white flex-1 flex flex-col justify-between">
+                <div class="space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-emerald-700">Headline
+                      Poster</span>
+                    <h4 class="font-extrabold text-gray-900 text-base leading-snug">
+                      "Kembalikan Vitalitas &amp; Jaga Stamina!"
+                    </h4>
+                  </div>
+
+                  <!-- Service & Benefits Box -->
+                  <div class="p-3 rounded-xl bg-emerald-50/80 border border-emerald-200 text-xs space-y-1">
+                    <div class="flex items-center justify-between">
+                      <span class="font-bold text-emerald-900">Formulasi Habbat 2 in 1</span>
+                      <span
+                        class="font-bold text-emerald-700 bg-white px-2 py-0.5 rounded-md border border-emerald-200">COD
+                        &amp; Free Ongkir</span>
+                    </div>
+                    <div class="text-[11px] text-emerald-950 font-semibold pt-1 border-t border-emerald-200">
+                      🌿 Habbatussauda + Brazilian Propolis (100% Herbal Alami)
+                    </div>
+                    <div class="text-[10px] text-gray-600 pt-0.5">
+                      ✓ Menjaga kesehatan jantung &amp; kaya antioksidan alami
+                    </div>
+                  </div>
+
+                  <!-- Isi Promosi -->
+                  <div class="space-y-1 text-xs text-gray-600 leading-relaxed">
+                    <p>Rahasia tubuh sehat &amp; aktif setiap hari. Meningkatkan daya tahan tubuh, menjaga stamina
+                      optimal saat beraktivitas berat, aman &amp; terpercaya untuk seluruh keluarga.</p>
+                  </div>
+
+                  <!-- Call to Action -->
+                  <div
+                    class="p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 font-bold flex items-center justify-between gap-2">
+                    <span>CTA: Beli Sekarang &gt;</span>
+                    <a href="https://wa.me/6285846986014?text=Halo%20Hasani%20Herbal,%20saya%20tertarik%20pesan%20Habbat%202in1%20untuk%20vitalitas"
+                      target="_blank" rel="noopener noreferrer"
+                      class="text-emerald-700 hover:text-emerald-900 shrink-0 underline">
+                      Pesan Sekarang ➔
+                    </a>
+                  </div>
+
+                  <!-- Target & Tone -->
+                  <div class="pt-2 border-t border-gray-100 space-y-1 text-[11px] text-gray-500">
+                    <p><strong>Target:</strong> Pria/wanita dewasa &amp; pekerja aktif yang butuh stamina harian.</p>
+                    <p><strong>Tone:</strong> Energik, memotivasi, solutif, dan meyakinkan.</p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500 font-medium">
+                  <span class="inline-flex items-center gap-1 font-semibold text-emerald-800"><i
+                      data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Pas 1792×2400 px (HD
+                    Asli)</span>
+                  <button onclick="copyToClipboard('copyHasani2', this)"
+                    class="text-emerald-700 hover:text-emerald-800 font-bold flex items-center gap-1">
+                    <i data-lucide="copy" class="w-3.5 h-3.5"></i> Salin Copy
+                  </button>
+                  <textarea id="copyHasani2" class="hidden">Headline: Kembalikan Vitalitas & Jaga Stamina!
+
+Isi Promosi:
+- Rahasia tubuh sehat & aktif setiap hari dengan 100% herbal alami.
+- Formulasi Habbat 2 in 1 (Habbatussauda + Propolis).
+- Manfaat utama: Meningkatkan daya tahan tubuh, menjaga kesehatan jantung, kaya antioksidan alami, aman, dan terpercaya untuk seluruh keluarga.
+- Layanan belanja: Bisa COD & Gratis Ongkir.
+
+Call to Action (CTA): Beli Sekarang >
+Target: Pria/wanita dewasa serta masyarakat aktif yang membutuhkan tambahan energi dan kebugaran tubuh sehari-hari.
+Tone of Voice: Energik, memotivasi, solutif, dan meyakinkan.</textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poster 3: Edisi Imunitas Keluarga & Bundling Hemat -->
+            <div
+              class="bg-white rounded-3xl border-2 border-emerald-200 shadow-card overflow-hidden group hover:shadow-elevated hover:border-emerald-400 transition-all flex flex-col">
+              <!-- Instagram Mockup Header -->
+              <div class="p-4 border-b border-gray-100 flex items-center justify-between bg-white">
+                <div class="flex items-center gap-2.5">
+                  <div
+                    class="w-8 h-8 rounded-full bg-emerald-700 text-white flex items-center justify-center font-bold text-xs shadow-sm">
+                    HH
+                  </div>
+                  <div>
+                    <h3 class="text-xs font-bold text-gray-900 leading-tight flex items-center gap-1">
+                      hasani.herbal
+                      <span class="text-blue-500 text-[11px]">✓</span>
+                    </h3>
+                    <span class="text-[10px] text-gray-500">Official Store • Feed Poster 03</span>
+                  </div>
+                </div>
+                <span class="text-xs font-bold bg-teal-100 text-teal-900 px-2.5 py-0.5 rounded-full">
+                  Imunitas Keluarga
+                </span>
+              </div>
+
+              <!-- Poster Visual Preview -->
+              <div class="relative bg-teal-50/50 overflow-hidden cursor-pointer"
+                onclick="openModal('Poster 3: Edisi Imunitas Keluarga &amp; Bundling Hemat', './public/assets/hasani/hasani-feed-3.jpeg', 'Headline: Jaga Stamina &amp; Imunitas Keluarga! Hasani Herbal Nabawi - Solusi Sehat Alami Setiap Hari. Meningkatkan daya tahan tubuh, melancarkan aliran darah, 100% herbal alami, aman dikonsumsi tiap hari. Promo bundling: Rp99.000/botol atau Paket 2 botol Rp189.000. Legalitas: Halal Indonesia &amp; BPOM TR233044221 (100 soft capsule).')">
+                <img src="./public/assets/hasani/hasani-feed-3.jpeg"
+                  alt="Poster 3 HASANI Herbal Nabawi Imunitas Keluarga" width="1792" height="2400" loading="lazy"
+                  style="aspect-ratio: 1792 / 2400;"
+                  class="w-full h-auto aspect-[1792/2400] aspect-feed-hasani object-contain group-hover:scale-[1.02] transition-transform duration-300 block" />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span
+                    class="bg-white/95 text-gray-900 font-bold text-xs px-4 py-2 rounded-full shadow-lg flex items-center gap-1.5">
+                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Klik untuk Perbesar (1792×2400)
+                  </span>
+                </div>
+              </div>
+
+              <!-- Poster Marketing Content -->
+              <div class="p-5 space-y-3.5 bg-white flex-1 flex flex-col justify-between">
+                <div class="space-y-2.5">
+                  <div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-teal-700">Headline
+                      Poster</span>
+                    <h4 class="font-extrabold text-gray-900 text-base leading-snug">
+                      "Jaga Stamina &amp; Imunitas Keluarga!"
+                    </h4>
+                  </div>
+
+                  <!-- Price & Legalities Box -->
+                  <div class="p-3 rounded-xl bg-teal-50/80 border border-teal-200 text-xs space-y-1">
+                    <div class="flex items-center justify-between">
+                      <span class="text-gray-500 line-through">Rp 120.000</span>
+                      <span class="font-black text-teal-900 text-sm">Paket 2 Botol: Rp 189.000</span>
+                    </div>
+                    <div class="text-[11px] text-teal-950 font-semibold pt-1 border-t border-teal-200">
+                      🛡️ Halal Indonesia &amp; BPOM TR233044221 (100 Soft Capsule)
+                    </div>
+                    <div class="text-[10px] text-gray-600 pt-0.5">
+                      ✓ Melancarkan aliran darah &amp; 100% herbal alami
+                    </div>
+                  </div>
+
+                  <!-- Isi Promosi -->
+                  <div class="space-y-1 text-xs text-gray-600 leading-relaxed">
+                    <p>Hasani Herbal Nabawi - Solusi Sehat Alami Setiap Hari. Membantu menjaga stamina keluarga
+                      tercinta, kaya antioksidan alami, aman dikonsumsi setiap hari untuk ketahanan tubuh prima.</p>
+                  </div>
+
+                  <!-- Call to Action -->
+                  <div
+                    class="p-2.5 rounded-lg bg-teal-50 border border-teal-200 text-xs text-teal-950 font-bold flex items-center justify-between gap-2">
+                    <span class="truncate">CTA: Pesan Sekarang — WA: 0858-4690-6014</span>
+                    <a href="https://wa.me/6285846906014?text=Halo%20Hasani%20Herbal,%20saya%20ingin%20pesan%20Paket%20Imunitas%20Keluarga"
+                      target="_blank" rel="noopener noreferrer"
+                      class="text-teal-700 hover:text-teal-900 shrink-0 underline">
+                      Chat WA ➔
+                    </a>
+                  </div>
+
+                  <!-- Target & Tone -->
+                  <div class="pt-2 border-t border-gray-100 space-y-1 text-[11px] text-gray-500">
+                    <p><strong>Target:</strong> Kepala keluarga / ibu rumah tangga peduli imunitas keluarga.</p>
+                    <p><strong>Tone:</strong> Informatif, hangat, berorientasi keluarga, jaminan Halal &amp; BPOM.</p>
+                  </div>
+                </div>
+
+                <div
+                  class="pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500 font-medium">
+                  <span class="inline-flex items-center gap-1 font-semibold text-emerald-800"><i
+                      data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Pas 1792×2400 px (HD
+                    Asli)</span>
+                  <button onclick="copyToClipboard('copyHasani3', this)"
+                    class="text-emerald-700 hover:text-emerald-800 font-bold flex items-center gap-1">
+                    <i data-lucide="copy" class="w-3.5 h-3.5"></i> Salin Copy
+                  </button>
+                  <textarea id="copyHasani3"
+                    class="hidden">Headline: Jaga Stamina & Imunitas Keluarga!
+
+Isi Promosi:
+- Hasani Herbal Nabawi - Solusi Sehat Alami Setiap Hari.
+- Manfaat: Meningkatkan daya tahan tubuh, membantu menjaga stamina, melancarkan aliran darah, kaya antioksidan alami, 100% bahan herbal alami, aman dikonsumsi tiap hari.
+- Promo Spesial Bundling & Gratis Ongkir: Hanya Rp99.000/botol (Coret Rp120.000) atau Paket 2 Botol: Rp189.000.
+- Legalitas: Sudah bersertifikat Halal Indonesia & terdaftar BPOM TR233044221 (Isi 100 Soft Capsule).
+
+Call to Action (CTA): Beli Sekarang / Pesan Sekarang — Wa: 0858-4690-6014 — IG: @hasani.herbal.
+Target: Kepala keluarga atau ibu rumah tangga yang peduli pada kesehatan dan imunitas seluruh anggota keluarga.
+Tone of Voice: Informatif, hangat, berorientasi pada keluarga, serta mengutamakan keamanan produk (Halal & BPOM).</textarea>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION G: INSTAGRAM STORY DESIGN ================= -->
+    <section id="story-design" class="py-20 md:py-28 bg-brand-soft border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span
+            class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+            Format Vertikal Interaktif (9:16)
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight">
+            Instagram Story Design
+          </h2>
+          <p class="text-base text-gray-600">
+            Desain materi Instagram Story berformat vertikal 9:16 dengan tipografi yang tajam, penataan stiker
+            engagement mockup (Q&amp;A box, countdown, promo ribbon), serta call-to-action berdaya klik tinggi yang
+            terhubung langsung ke kanal pemesanan WhatsApp.
+          </p>
+        </div>
+
+        <!-- ================= CAMPAIGN: HASANI HERBAL NABAWI (3 STORY REAL) ================= -->
+        <div id="hasaniStorySection" class="space-y-8">
+
+          <!-- Hasani Story Campaign Banner -->
+          <div
+            class="bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50/70 border-2 border-emerald-300 rounded-3xl p-6 sm:p-8 text-emerald-950 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 shadow-sm">
+            <div class="space-y-2">
+              <div class="flex flex-wrap items-center gap-2.5">
+                <span
+                  class="text-xs font-black uppercase tracking-wider bg-emerald-700 text-white px-3 py-1 rounded-lg">
+                  Karya Desain Story UMKM
+                </span>
+                <span class="text-sm font-extrabold text-emerald-900">
+                  HASANI Herbal Nabawi • Habbatussauda 2 in 1 (Habbat + Propolis)
+                </span>
+              </div>
+              <p class="text-xs sm:text-sm text-emerald-900/90 leading-relaxed max-w-3xl">
+                Desain vertikal 9:16 untuk kebutuhan interaksi harian Instagram Story. Dilengkapi stiker tanya jawab
+                (Q&amp;A box mockup), edukasi 4 manfaat kesehatan dengan icon modern, serta highlight penawaran bundling
+                Rp99.000/botol (Paket 2 botol Rp189.000) dengan tombol CTA order WhatsApp.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span
+                class="text-xs font-bold bg-white text-emerald-800 px-3.5 py-2 rounded-xl border border-emerald-200 shadow-sm">
+                Rasio Vertikal 9:16 • Canva
+              </span>
+            </div>
+          </div>
+
+          <!-- Hasani 3 Stories Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Hasani Story 1: Q&A + Promo -->
+            <div
+              class="bg-white p-5 rounded-3xl border-2 border-emerald-200 shadow-card flex flex-col justify-between group hover:shadow-elevated hover:border-emerald-400 transition-all">
+              <div class="space-y-3 mb-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                    Story 1 • Q&amp;A + Promo
+                  </span>
+                  <span
+                    class="text-[11px] font-bold text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
+                    ⭐ 4.8 Rating
+                  </span>
+                </div>
+                <h3 class="font-extrabold text-gray-900 text-base leading-snug">
+                  "Rp99 Ribu untuk Jaga Stamina? Beneran..?"
+                </h3>
+                <p class="text-xs text-gray-600 leading-relaxed">
+                  Desain Story dengan stiker Question Box interaktif untuk memicu respon DM audiens, menonjolkan botol
+                  produk di kelilingi habbatussauda &amp; madu murni, serta banner promo Rp99.000.
+                </p>
+              </div>
+
+              <!-- Smartphone Frame Mockup -->
+              <div
+                class="relative rounded-2xl overflow-hidden border-2 border-emerald-300 bg-emerald-50 shadow-inner cursor-pointer"
+                onclick="openModal('Hasani Story 1: Q&amp;A + Promo Harga', './public/assets/hasani/hasani-story-1.jpg', 'Desain Instagram Story vertikal (1080 × 1920 px) dengan stiker question box interaktif, foto botol HASANI Habbat 2 in 1 di kelilingi bahan alami habbatussauda &amp; madu murni, serta banner promo Rp99.000/botol (Paket 2 botol Rp189.000 + Bonus Biotawa + Gratis Ongkir). BPOM TR233044221 &amp; Rating 4.8.')">
+                <img src="./public/assets/hasani/hasani-story-1-thumb.jpg" alt="Hasani Story 1 - Q&A Promo"
+                  class="w-full aspect-9-16 object-cover object-center group-hover:scale-105 transition-transform duration-300" />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span
+                    class="bg-white/95 text-gray-900 font-bold text-xs px-3.5 py-2 rounded-full shadow flex items-center gap-1.5">
+                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Perbesar Story
+                  </span>
+                </div>
+              </div>
+
+              <!-- Story Details & CTA Link -->
+              <div class="pt-4 mt-3 border-t border-gray-100 space-y-2.5">
+                <div class="text-[11px] text-gray-600 leading-tight">
+                  <span class="font-bold text-gray-900">Interaksi: </span>
+                  <span>Instagram Question Box Mockup &amp; Stiker [ PESAN SEKARANG ]</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-amber-50/80 border border-amber-200 text-xs">
+                  <span class="font-bold text-amber-900">Promo: </span>
+                  <span class="text-amber-950 font-semibold">1 Botol Rp99k | 2 Botol Rp189k + Bonus Biotawa</span>
+                </div>
+                <a href="https://wa.me/6285846986014?text=Halo%20Hasani%20Herbal,%20saya%20tertarik%20dengan%20promo%20Story%20Habbatussauda%20Rp99.000"
+                  target="_blank" rel="noopener noreferrer"
+                  class="block text-center text-xs font-bold text-emerald-700 hover:text-emerald-900 bg-emerald-50 hover:bg-emerald-100 py-2 rounded-xl border border-emerald-200 transition-colors">
+                  Coba CTA Pesan Sekarang ➔
+                </a>
+                <div class="text-center text-[11px] font-semibold text-gray-400">
+                  Rasio 9:16 • 1080×1920 px
+                </div>
+              </div>
+            </div>
+
+            <!-- Hasani Story 2: Edukasi Manfaat & Formulasi -->
+            <div
+              class="bg-white p-5 rounded-3xl border-2 border-emerald-200 shadow-card flex flex-col justify-between group hover:shadow-elevated hover:border-emerald-400 transition-all">
+              <div class="space-y-3 mb-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                    Story 2 • Edukasi Manfaat
+                  </span>
+                  <span
+                    class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    Halal &amp; BPOM
+                  </span>
+                </div>
+                <h3 class="font-extrabold text-gray-900 text-base leading-snug">
+                  "Solusi Sehat dengan Ramuan Herbal Pilihan"
+                </h3>
+                <p class="text-xs text-gray-600 leading-relaxed">
+                  Desain edukatif vertikal memaparkan 4 manfaat utama berikon rapi: Daya tahan tubuh, kesehatan jantung,
+                  antioksidan alami, dan 100% herbal aman.
+                </p>
+              </div>
+
+              <!-- Smartphone Frame Mockup -->
+              <div
+                class="relative rounded-2xl overflow-hidden border-2 border-emerald-300 bg-emerald-50 shadow-inner cursor-pointer"
+                onclick="openModal('Hasani Story 2: Edukasi Manfaat &amp; Formulasi', './public/assets/hasani/hasani-story-2.jpeg', 'Desain Instagram Story edukatif (1536 × 2752 px) berlatar hijau herbal. Memuat 4 pilar khasiat: 1) Meningkatkan daya tahan tubuh, 2) Menjaga kesehatan jantung, 3) Kaya antioksidan alami, 4) 100% herbal alami &amp; aman. Sertifikasi Halal Indonesia &amp; BPOM resmi. Tombol [ BELI SEKARANG ].')">
+                <img src="./public/assets/hasani/hasani-story-2-thumb.jpeg" alt="Hasani Story 2 - Edukasi Manfaat"
+                  class="w-full aspect-9-16 object-cover object-center group-hover:scale-105 transition-transform duration-300" />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span
+                    class="bg-white/95 text-gray-900 font-bold text-xs px-3.5 py-2 rounded-full shadow flex items-center gap-1.5">
+                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Perbesar Story
+                  </span>
+                </div>
+              </div>
+
+              <!-- Story Details & CTA Link -->
+              <div class="pt-4 mt-3 border-t border-gray-100 space-y-2.5">
+                <div class="text-[11px] text-gray-600 leading-tight">
+                  <span class="font-bold text-gray-900">Interaksi: </span>
+                  <span>Link Sticker [ BELI SEKARANG ] + Tagline Sehat Alami</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-emerald-50/80 border border-emerald-200 text-xs">
+                  <span class="font-bold text-emerald-900">Fitur: </span>
+                  <span class="text-emerald-950 font-semibold">100% Herbal Alami • Bisa COD &amp; Bebas Ongkir</span>
+                </div>
+                <a href="https://wa.me/6285846986014?text=Halo%20Hasani%20Herbal,%20saya%20ingin%20konsultasi%20manfaat%20Habbat%202in1"
+                  target="_blank" rel="noopener noreferrer"
+                  class="block text-center text-xs font-bold text-emerald-700 hover:text-emerald-900 bg-emerald-50 hover:bg-emerald-100 py-2 rounded-xl border border-emerald-200 transition-colors">
+                  Coba CTA Beli Sekarang ➔
+                </a>
+                <div class="text-center text-[11px] font-semibold text-gray-400">
+                  Rasio 9:16 • 1536×2752 px
+                </div>
+              </div>
+            </div>
+
+            <!-- Hasani Story 3: Promo Spesial Bundling -->
+            <div
+              class="bg-white p-5 rounded-3xl border-2 border-emerald-200 shadow-card flex flex-col justify-between group hover:shadow-elevated hover:border-emerald-400 transition-all">
+              <div class="space-y-3 mb-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-xs font-bold text-teal-800 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+                    Story 3 • Promo Bundling
+                  </span>
+                  <span
+                    class="text-[11px] font-bold text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
+                    Duo Pack Hemat
+                  </span>
+                </div>
+                <h3 class="font-extrabold text-gray-900 text-base leading-snug">
+                  "Jaga Stamina &amp; Imunitas Keluarga!"
+                </h3>
+                <p class="text-xs text-gray-600 leading-relaxed">
+                  Desain Story penawaran bundling duo botol HASANI dengan golden ribbon banner Rp99k/botol (Paket 2
+                  Botol Rp189k + Bonus Biotawa + Free Ongkir).
+                </p>
+              </div>
+
+              <!-- Smartphone Frame Mockup -->
+              <div
+                class="relative rounded-2xl overflow-hidden border-2 border-emerald-300 bg-emerald-50 shadow-inner cursor-pointer"
+                onclick="openModal('Hasani Story 3: Promo Spesial Bundling', './public/assets/hasani/hasani-story-3.jpeg', 'Desain Instagram Story promosi bundling duo pack (1536 × 2752 px). Menampilkan ribbon emas promo Hanya Rp99.000/botol (Coret Rp120.000) | Paket 2 Botol Rp189.000 + Bonus Sachet Biotawa + Gratis Ongkir. Sertifikasi Halal &amp; BPOM TR233044221. WhatsApp 0858-4690-6014.')">
+                <img src="./public/assets/hasani/hasani-story-3-thumb.jpeg" alt="Hasani Story 3 - Promo Bundling"
+                  class="w-full aspect-9-16 object-cover object-center group-hover:scale-105 transition-transform duration-300" />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span
+                    class="bg-white/95 text-gray-900 font-bold text-xs px-3.5 py-2 rounded-full shadow flex items-center gap-1.5">
+                    <i data-lucide="zoom-in" class="w-4 h-4"></i> Perbesar Story
+                  </span>
+                </div>
+              </div>
+
+              <!-- Story Details & CTA Link -->
+              <div class="pt-4 mt-3 border-t border-gray-100 space-y-2.5">
+                <div class="text-[11px] text-gray-600 leading-tight">
+                  <span class="font-bold text-gray-900">Interaksi: </span>
+                  <span>Direct Order via WhatsApp 0858-4690-6014 &amp; IG @hasani.herbal</span>
+                </div>
+                <div class="p-2.5 rounded-xl bg-teal-50/80 border border-teal-200 text-xs">
+                  <span class="font-bold text-teal-900">Penawaran: </span>
+                  <span class="text-teal-950 font-semibold">Paket 2 Botol Rp 189.000 + COD &amp; Free Ongkir</span>
+                </div>
+                <a href="https://wa.me/6285846906014?text=Halo%20Hasani%20Herbal,%20saya%20ingin%20pesan%20Paket%20Bundling%20Story%20Rp189.000"
+                  target="_blank" rel="noopener noreferrer"
+                  class="block text-center text-xs font-bold text-teal-700 hover:text-teal-900 bg-teal-50 hover:bg-teal-100 py-2 rounded-xl border border-teal-200 transition-colors">
+                  Coba CTA Chat WhatsApp ➔
+                </a>
+                <div class="text-center text-[11px] font-semibold text-gray-400">
+                  Rasio 9:16 • 1536×2752 px
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION H: REELS VIDEO EDITING ================= -->
+    <section id="reels-video" class="py-20 md:py-28 bg-white border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <span
+            class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+            Video Editing CapCut
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight">
+            Reels Video Instagram
+          </h2>
+          <p class="text-base text-gray-600">
+            Spesifikasi: Durasi 20 detik (15–20 detik), format vertikal 9:16 (1080×1920 px), opening hook, transisi
+            halus, teks pendukung, audio berlisensi, dan closing CTA.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+          <!-- Left: Realistic Smartphone Frame with Real HTML5 Video Player -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div
+              class="w-full max-w-[340px] bg-brand-deep rounded-[40px] p-3 shadow-elevated border-4 border-gray-800 relative group">
+
+              <!-- Phone Dynamic Island / Notch Mockup -->
+              <div
+                class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-gray-900 rounded-full z-30 flex items-center justify-end px-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-gray-800"></span>
+              </div>
+
+              <!-- Interactive Video Screen Container -->
+              <div
+                class="relative w-full aspect-9-16 rounded-[30px] overflow-hidden bg-black flex flex-col justify-between shadow-inner"
+                id="reelsPlayerBox">
+
+                <!-- Real HTML5 Video Element -->
+                <video id="reelsRealVideo" playsinline preload="auto" class="w-full h-full object-cover cursor-pointer">
+                  <source src="./public/assets/reels-video-h264.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2">
+                  <source src="./public/assets/reels-video-h264.mp4" type="video/mp4">
+                  <source src="./assets/reels-video-h264.mp4" type="video/mp4">
+                  <source src="./public/assets/reels-video.mp4" type="video/mp4">
+                  <source src="./assets/reels-video.mp4" type="video/mp4">
+                  <source src="./assets/reels video editing/reels video.mp4" type="video/mp4">
+                  Browser Anda tidak mendukung tag pemutar video HTML5.
+                </video>
+
+                <!-- Floating Top Badges -->
+                <div class="absolute top-8 left-4 right-4 z-20 flex items-center justify-between pointer-events-none">
+                  <span
+                    class="bg-black/60 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full border border-white/20 flex items-center gap-1.5 shadow-sm">
+                    <span>✂️</span>
+                    <span>CapCut Edit</span>
+                  </span>
+                  <span id="reelsTimerBadge"
+                    class="bg-emerald-700/90 backdrop-blur-md text-white text-xs font-mono font-bold px-2.5 py-1 rounded-full shadow-sm">
+                    00:00 / 00:20
+                  </span>
+                </div>
+
+                <!-- Big Centered Play Overlay (Tampil saat video dijeda) -->
+                <div id="reelsPlayOverlay" onclick="toggleReelsPlay()"
+                  class="absolute inset-0 z-20 flex flex-col items-center justify-center bg-black/35 backdrop-blur-[2px] cursor-pointer transition-all duration-300">
+                  <div
+                    class="w-16 h-16 rounded-full bg-emerald-600/90 hover:bg-emerald-600 text-white flex items-center justify-center shadow-elevated hover:scale-110 transition-transform">
+                    <i data-lucide="play" class="w-8 h-8 ml-1"></i>
+                  </div>
+                  <span
+                    class="mt-3 text-xs font-bold text-white bg-black/60 px-3 py-1 rounded-full border border-white/20">
+                    Putar Video Reels
+                  </span>
+                </div>
+
+                <!-- Floating Audio Bar (Bottom Safe Zone) -->
+                <div class="absolute bottom-16 left-4 right-4 z-20 pointer-events-none">
+                  <div
+                    class="flex items-center gap-2 bg-black/60 backdrop-blur-md p-2 rounded-xl text-[11px] text-white/90 border border-white/10">
+                    <i data-lucide="music" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+                    <span class="truncate">Audio &amp; Musik Berlisensi (Royalty-Free)</span>
+                  </div>
+                </div>
+
+                <!-- Interactive Player Controls Bar -->
+                <div
+                  class="absolute bottom-0 inset-x-0 z-20 bg-gradient-to-t from-black/95 via-black/80 to-transparent p-3 pt-6 space-y-2">
+                  <!-- Progress Bar / Scrub Track -->
+                  <div class="w-full bg-white/25 h-1.5 rounded-full overflow-hidden cursor-pointer"
+                    onclick="scrubReels(event)" title="Geser durasi video">
+                    <div id="reelsProgressBar" class="bg-emerald-500 h-full w-0 transition-all duration-100"></div>
+                  </div>
+
+                  <!-- Controls Buttons -->
+                  <div class="flex items-center justify-between text-white pt-1">
+                    <button id="reelsPlayBtn" onclick="toggleReelsPlay()"
+                      class="p-2 rounded-full bg-emerald-700 hover:bg-emerald-600 text-white focus:outline-none transition-all shadow-sm"
+                      title="Play / Pause">
+                      <i data-lucide="play" id="playIcon" class="w-4 h-4"></i>
+                    </button>
+
+                    <span id="reelsCurrentTime" class="text-xs font-mono font-semibold text-gray-200">
+                      00:00 / 00:20
+                    </span>
+
+                    <button onclick="toggleReelsMute()" id="muteBtn"
+                      class="p-2 rounded-full hover:bg-white/10 text-white focus:outline-none"
+                      title="Mute / Unmute Audio">
+                      <i data-lucide="volume-2" id="volumeIcon" class="w-4 h-4"></i>
+                    </button>
+
+                    <button onclick="toggleReelsFullscreen()"
+                      class="p-2 rounded-full hover:bg-white/10 text-white focus:outline-none"
+                      title="Layar Penuh (Fullscreen)">
+                      <i data-lucide="maximize" class="w-4 h-4"></i>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Direct Video Tab Open Link -->
+              <div class="mt-3 text-center">
+                <a href="./public/assets/reels-video.mp4" target="_blank"
+                  class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-700 hover:text-emerald-900 bg-emerald-50 hover:bg-emerald-100 px-3 py-1.5 rounded-lg border border-emerald-200 transition-colors">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  <span>Buka Video di Tab Baru (MP4 HD)</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: Technical Breakdown & Script Structure -->
+          <div class="lg:col-span-7 space-y-6">
+
+            <div class="bg-emerald-50/60 p-6 sm:p-8 rounded-3xl border border-emerald-200 space-y-4">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-emerald-200 text-xs font-bold text-emerald-800">
+                <i data-lucide="film" class="w-3.5 h-3.5"></i>
+                <span>Spesifikasi CapCut Dummy Project</span>
+              </div>
+              <h3 class="text-2xl font-bold text-brand-deep">Struktur Video Reels 20 Detik</h3>
+              <p class="text-sm text-gray-800 leading-relaxed font-semibold">
+                "Video editing menggunakan CapCut – Dummy Project."
+              </p>
+              <p class="text-xs text-gray-600 leading-relaxed">
+                Video dirancang untuk memaksimalkan retensi penonton dengan pembagian 4 fase durasi yang jelas, transisi
+                lembut, subtitle terpusat pada safe area Instagram, serta ajakan tindakan langsung di akhir video.
+              </p>
+            </div>
+
+            <!-- 4 Phased Timeline Breakdown Table -->
+            <div class="space-y-3">
+
+              <!-- Phase 1 -->
+              <div
+                class="p-4 rounded-2xl bg-white border border-brand-border shadow-sm flex items-start gap-3 hover:border-emerald-400 transition-colors">
+                <span
+                  class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-mono font-bold text-xs shrink-0">
+                  00:00 - 00:03
+                </span>
+                <div class="space-y-1">
+                  <h4 class="text-sm font-bold text-gray-900">1. Opening Hook (3 Detik Pertama)</h4>
+                  <p class="text-xs text-gray-600 leading-relaxed">
+                    Visual pop-up teks dan transisi cepat untuk menghentikan scrolling audiens di 3 detik pertama dengan
+                    pertanyaan/hook yang memancing rasa penasaran.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phase 2 -->
+              <div
+                class="p-4 rounded-2xl bg-white border border-brand-border shadow-sm flex items-start gap-3 hover:border-emerald-400 transition-colors">
+                <span
+                  class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-mono font-bold text-xs shrink-0">
+                  00:03 - 00:08
+                </span>
+                <div class="space-y-1">
+                  <h4 class="text-sm font-bold text-gray-900">2. Problem &amp; Product Presentation (B-Roll)</h4>
+                  <p class="text-xs text-gray-600 leading-relaxed">
+                    Sorotan visual kemasan produk, tekstur, atau permasalahan harian yang diatasi dengan transisi visual
+                    yang halus dan estetik.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phase 3 -->
+              <div
+                class="p-4 rounded-2xl bg-white border border-brand-border shadow-sm flex items-start gap-3 hover:border-emerald-400 transition-colors">
+                <span
+                  class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-mono font-bold text-xs shrink-0">
+                  00:08 - 00:15
+                </span>
+                <div class="space-y-1">
+                  <h4 class="text-sm font-bold text-gray-900">3. Benefits &amp; Dynamic Subtitles</h4>
+                  <p class="text-xs text-gray-600 leading-relaxed">
+                    Subtitle animasi yang dinamis dan mudah dibaca di dalam safe area vertikal 9:16 untuk memaparkan
+                    khasiat, keunggulan, serta legalitas produk.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phase 4 -->
+              <div
+                class="p-4 rounded-2xl bg-white border border-brand-border shadow-sm flex items-start gap-3 hover:border-emerald-400 transition-colors">
+                <span
+                  class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-mono font-bold text-xs shrink-0">
+                  00:15 - 00:20
+                </span>
+                <div class="space-y-1">
+                  <h4 class="text-sm font-bold text-gray-900">4. Closing Call to Action (CTA)</h4>
+                  <p class="text-xs text-gray-600 leading-relaxed">
+                    Penutup video dengan ajakan bertindak yang jelas (Call to Action), informasi harga promo bundling,
+                    dan arahan pemesanan via marketplace atau WhatsApp.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Audio Clearance Statement -->
+            <div class="p-4 rounded-xl bg-gray-50 border border-gray-200 text-xs text-gray-600 flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span>Musik &amp; Audio: Menggunakan audio berlisensi (Royalty-Free / Licensed audio) yang aman dari
+                pelanggaran hak cipta media sosial.</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION I: PRODUCT CATALOG DESIGN ================= -->
+    <section id="catalog" class="py-20 md:py-28 bg-brand-soft border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <span
+            class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+            Desain Katalog Penjualan
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-deep tracking-tight">
+            Product Catalog Design
+          </h2>
+          <p class="text-base text-gray-600">
+            Wajib memiliki foto produk, nama produk, informasi produk, harga resmi, desain visual konsisten, dan
+            informasi promosi.
+          </p>
+        </div>
+
+        <!-- Catalog Big Sheet Mockup (Clickable for full high-res preview) -->
+        <div class="bg-white rounded-3xl p-6 sm:p-10 border border-brand-border shadow-soft mb-12">
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-gray-100 gap-4">
+            <div>
+              <span class="text-xs font-extrabold text-emerald-700 tracking-wider uppercase">Official Product
+                Line</span>
+              <h3 class="text-2xl font-black text-brand-deep">HASANI Herbal Nabawi Product Catalog 2026</h3>
+            </div>
+            <button
+              onclick="openModal('Desain Lembar Katalog Resmi HASANI Herbal Nabawi', './public/assets/catalog.svg', 'Desain lembar katalog produk lengkap memuat 4 pilar produk & paket suplemen HASANI Habbat 2 in 1 (Habbatussauda 450mg + Brazilian Propolis 50mg) dalam kemasan 100 soft capsule, harga resmi promo Rp99.000, paket bundling hemat Rp189.000 + bonus Biotawa, spesifikasi khasiat BPOM TR233044221, dan kontak pemesanan resmi WhatsApp.')"
+              class="inline-flex items-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 font-bold text-xs py-2.5 px-5 rounded-xl transition-all shadow-sm">
+              <i data-lucide="maximize" class="w-4 h-4"></i>
+              <span>Buka Fullsheet Katalog</span>
+            </button>
+          </div>
+
+          <!-- 4 Products Interactive Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Item 1: HASANI Habbat 2 in 1 (Single Pack) -->
+            <div
+              class="bg-brand-soft p-5 rounded-2xl border border-brand-border hover:border-emerald-400 hover:shadow-card transition-all flex flex-col justify-between group">
+              <div>
+                <div
+                  onclick="openModal('HASANI Habbat 2 in 1 (Single Bottle 100 Soft Capsule)', './public/assets/catalog/hasani-catalog-1.png', 'Tampak depan kemasan botol resmi HASANI Habbat 2 in 1 (Habbatussauda murni + Brazilian Propolis). Isi 100 soft capsule, menjaga daya tahan tubuh, memulihkan stamina, dan kaya antioksidan alami.')"
+                  class="w-full h-48 rounded-xl bg-white border border-gray-100 flex items-center justify-center p-3 mb-4 overflow-hidden relative cursor-pointer group/img">
+                  <img src="./public/assets/catalog/hasani-catalog-1.png" alt="HASANI Habbat 2 in 1 Single Bottle"
+                    class="max-h-full object-contain group-hover/img:scale-105 transition-transform duration-300" />
+                  <span
+                    class="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-0.5 rounded-md flex items-center gap-1 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                    <i data-lucide="zoom-in" class="w-3 h-3"></i> Zoom
+                  </span>
+                </div>
+                <span
+                  class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                  Suplemen Harian
+                </span>
+                <h4 class="font-extrabold text-gray-900 text-base mt-2">HASANI Habbat 2 in 1</h4>
+                <p class="text-xs text-emerald-700 font-semibold mt-1">Isi: 100 Soft Capsule</p>
+                <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                  Sinergi Habbatussauda 450mg &amp; Brazilian Propolis 50mg. Menjaga stamina, melancarkan aliran darah,
+                  dan kaya antioksidan.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-gray-200">
+                <span class="block text-[11px] text-gray-400 line-through">Rp 120.000</span>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-lg font-black text-emerald-800">Rp 99.000</span>
+                  <span
+                    class="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Hemat
+                    18%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Paket Duo Imunitas Keluarga (Twin Pack) - BEST SELLER -->
+            <div
+              class="bg-white p-5 rounded-2xl border-2 border-emerald-600 shadow-soft transition-all flex flex-col justify-between relative group">
+              <span
+                class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white font-extrabold text-[10px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md flex items-center gap-1">
+                <span>⭐</span> BEST SELLER
+              </span>
+              <div>
+                <div
+                  onclick="openModal('Paket Duo Imunitas Keluarga (Twin Pack 2 Botol)', './public/assets/catalog/hasani-catalog-4.png', 'Paket promo hemat 2 botol HASANI Habbat 2 in 1 (total 200 soft capsule). Solusi sehat stamina seluruh anggota keluarga dengan bonus sachet Biotawa dan gratis ongkir ke seluruh Indonesia.')"
+                  class="w-full h-48 rounded-xl bg-emerald-50/50 border border-emerald-100 flex items-center justify-center p-3 mb-4 overflow-hidden relative cursor-pointer group/img">
+                  <img src="./public/assets/catalog/hasani-catalog-4.png" alt="Paket Duo Imunitas Keluarga 2 Botol"
+                    class="max-h-full object-contain group-hover/img:scale-105 transition-transform duration-300" />
+                  <span
+                    class="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-0.5 rounded-md flex items-center gap-1 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                    <i data-lucide="zoom-in" class="w-3 h-3"></i> Zoom
+                  </span>
+                </div>
+                <span
+                  class="text-[10px] font-bold text-amber-900 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-200">
+                  Bundling Hemat Keluarga
+                </span>
+                <h4 class="font-extrabold text-gray-900 text-base mt-2">Paket Duo Imunitas</h4>
+                <p class="text-xs text-emerald-700 font-semibold mt-1">Isi: 2 Botol (200 Kapsul) + Bonus</p>
+                <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                  Paket terlaris keluarga! Lebih hemat Rp51.000 + Bonus 1 Sachet Biotawa + Bebas Ongkir seluruh
+                  Indonesia.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-gray-200">
+                <span class="block text-[11px] text-gray-400 line-through">Rp 240.000</span>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-xl font-black text-emerald-800">Rp 189.000</span>
+                  <span
+                    class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Diskon
+                    Rp51.000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Formula Komposisi & Khasiat (Standar BPOM & Halal) -->
+            <div
+              class="bg-brand-soft p-5 rounded-2xl border border-brand-border hover:border-emerald-400 hover:shadow-card transition-all flex flex-col justify-between group">
+              <div>
+                <div
+                  onclick="openModal('Detail Komposisi & Aturan Pakai HASANI', './public/assets/catalog/hasani-catalog-3.png', 'Tampak spesifikasi resmi botol HASANI Habbat 2 in 1: Komposisi Habbatussauda 450mg, Brazilian Propolis 50mg, aturan minum Dewasa (2-3 kapsul, 2x sehari) dan Anak (1 kapsul, 2x sehari), serta registrasi BPOM TR233044221.')"
+                  class="w-full h-48 rounded-xl bg-white border border-gray-100 flex items-center justify-center p-3 mb-4 overflow-hidden relative cursor-pointer group/img">
+                  <img src="./public/assets/catalog/hasani-catalog-3.png" alt="Detail Komposisi & Khasiat HASANI"
+                    class="max-h-full object-contain group-hover/img:scale-105 transition-transform duration-300" />
+                  <span
+                    class="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-0.5 rounded-md flex items-center gap-1 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                    <i data-lucide="zoom-in" class="w-3 h-3"></i> Zoom
+                  </span>
+                </div>
+                <span
+                  class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                  Standar BPOM &amp; Halal
+                </span>
+                <h4 class="font-extrabold text-gray-900 text-base mt-2">Komposisi &amp; Khasiat</h4>
+                <p class="text-xs text-emerald-700 font-semibold mt-1">BPOM TR233044221</p>
+                <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                  Dosis terukur aman: Dewasa 2–3 kapsul 2x/hari, Anak 1 kapsul 2x/hari. 100% herbal nabawi murni tanpa
+                  kimia sintetis.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-gray-200">
+                <span class="block text-[11px] text-gray-400 font-medium">Garansi Keaslian</span>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-lg font-black text-emerald-800">100% Herbal</span>
+                  <span
+                    class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Halal
+                    MUI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: Soft Capsule Premium Quality Display -->
+            <div
+              class="bg-brand-soft p-5 rounded-2xl border border-brand-border hover:border-emerald-400 hover:shadow-card transition-all flex flex-col justify-between group">
+              <div>
+                <div
+                  onclick="openModal('Golden Soft Capsule & Formulasi Minyak Murni', './public/assets/catalog/hasani-catalog-2.png', 'Tekstur soft capsule transparan premium yang menjaga kemurnian minyak habbatussauda dan propolis. Higienis, mudah ditelan, cepat diserap tubuh tanpa rasa pahit di lidah.')"
+                  class="w-full h-48 rounded-xl bg-white border border-gray-100 flex items-center justify-center p-3 mb-4 overflow-hidden relative cursor-pointer group/img">
+                  <img src="./public/assets/catalog/hasani-catalog-2.png" alt="Golden Soft Capsule & Action Shot"
+                    class="max-h-full object-contain group-hover/img:scale-105 transition-transform duration-300" />
+                  <span
+                    class="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] px-2 py-0.5 rounded-md flex items-center gap-1 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                    <i data-lucide="zoom-in" class="w-3 h-3"></i> Zoom
+                  </span>
+                </div>
+                <span
+                  class="text-[10px] font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-200">
+                  Kualitas Grade A
+                </span>
+                <h4 class="font-extrabold text-gray-900 text-base mt-2">Golden Soft Capsule</h4>
+                <p class="text-xs text-emerald-700 font-semibold mt-1">Ekstraksi Dingin (Cold-Pressed)</p>
+                <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                  Kapsul lunak minyak emas murni. Cepat larut dalam lambung, ramah di pencernaan, dan penyerapan nutrisi
+                  optimal.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-gray-200">
+                <span class="block text-[11px] text-gray-400 font-medium">Bioavailabilitas</span>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-lg font-black text-emerald-800">Cepat Serap</span>
+                  <span
+                    class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Tanpa
+                    Pahit</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Notice Bar -->
+          <div
+            class="mt-8 p-4 rounded-xl bg-emerald-50 border border-emerald-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-700">
+            <span class="font-semibold text-emerald-950 flex items-center gap-2">
+              <span class="text-emerald-700 font-bold">📌 Informasi Pemesanan:</span> WhatsApp 0858-4690-6014 •
+              Pengiriman Cepat Seluruh Indonesia (Bisa COD) • Halal &amp; Terdaftar BPOM TR233044221
+            </span>
+            <a href="https://wa.me/6285846906014?text=Halo%20HASANI%20Herbal,%20saya%20tertarik%20konsultasi%20pemesanan%20katalog%20produk%20Habbat%202in1"
+              target="_blank"
+              class="font-bold text-emerald-800 hover:text-emerald-950 underline flex items-center gap-1 shrink-0">
+              <span>Konsultasi Pemesanan via WhatsApp</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION J: CONTACT SECTION ================= -->
+    <section id="contact" class="py-20 md:py-28 bg-white border-t border-brand-border">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header (Persis Kalimat Sesuai Prompt) -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <span
+            class="text-xs font-bold uppercase tracking-wider text-lavender-600 bg-lavender-50 px-3.5 py-1.5 rounded-full border border-lavender-200">
+            Kolaborasi &amp; Kerja Sama
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-deep tracking-tight">
+            Let's Create Something Creative Together!
+          </h2>
+          <p class="text-base text-gray-600 max-w-2xl mx-auto">
+            Saya siap membantu mengembangkan konten visual media sosial, copywriting, dan video Reels untuk meningkatkan
+            daya tarik brand dan UMKM Anda.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+          <!-- Contact Cards (Informasi Sesuai Prompt) -->
+          <div class="lg:col-span-5 space-y-4">
+
+            <!-- WhatsApp Active Link (Langsung Buka Percakapan) -->
+            <a href="https://wa.me/628895673306?text=Halo%20Muhammad%20Rizki%20Ardhana,%20saya%20tertarik%20bekerja%20sama%20dengan%20Anda%20sebagai%20Content%20Editor%20untuk%20proyek%20media%20sosial."
+              target="_blank" rel="noopener noreferrer"
+              class="p-6 rounded-2xl bg-emerald-50 border-2 border-emerald-300 hover:border-emerald-500 hover:shadow-soft transition-all flex items-center gap-4 group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                <i data-lucide="message-circle" class="w-7 h-7"></i>
+              </div>
+              <div class="space-y-0.5">
+                <span class="text-xs font-bold text-emerald-800 uppercase tracking-wider">Direct WhatsApp (Aktif)</span>
+                <h3 class="text-lg font-extrabold text-emerald-950">+62 889-5673-306</h3>
+                <p class="text-xs text-emerald-700">Klik untuk langsung membuka percakapan chat WhatsApp</p>
+              </div>
+            </a>
+
+            <!-- Email Card -->
+            <a href="mailto:bariz.creative@gmail.com?subject=Pertanyaan%20Kerja%20Sama%20Content%20Editor"
+              class="p-6 rounded-2xl bg-white border border-brand-border hover:border-lavender-400 hover:shadow-card transition-all flex items-center gap-4 group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-lavender-100 text-lavender-700 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                <i data-lucide="mail" class="w-7 h-7"></i>
+              </div>
+              <div class="space-y-0.5">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Email Korespondensi</span>
+                <h3 class="text-base font-extrabold text-gray-900 truncate">bariz.creative@gmail.com</h3>
+                <p class="text-xs text-gray-500">Kirim brief kebutuhan atau pertanyaan proyek</p>
+              </div>
+            </a>
+
+            <!-- Instagram Profile Card -->
+            <a href="https://instagram.com/rizkyardhana.id" target="_blank" rel="noopener noreferrer"
+              class="p-6 rounded-2xl bg-white border border-brand-border hover:border-pink-300 hover:shadow-card transition-all flex items-center gap-4 group">
+              <div
+                class="w-14 h-14 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-sm">
+                <svg class="w-7 h-7 text-pink-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div class="space-y-0.5">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Instagram Profil</span>
+                <h3 class="text-base font-extrabold text-gray-900">@rizkyardhana.id</h3>
+                <p class="text-xs text-gray-500">Lihat update karya dan aktivitas kreatif</p>
+              </div>
+            </a>
+
+            <!-- Public Portfolio Link Card -->
+            <div class="p-6 rounded-2xl bg-white border border-brand-border flex items-center gap-4">
+              <div
+                class="w-14 h-14 rounded-2xl bg-lavender-50 text-lavender-700 flex items-center justify-center shrink-0">
+                <i data-lucide="globe" class="w-7 h-7"></i>
+              </div>
+              <div class="space-y-0.5">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Single Public Link</span>
+                <h3 class="text-sm font-extrabold text-lavender-900 truncate">portofolio-rizkiardhana.vercel.app</h3>
+                <p class="text-xs text-gray-500">Dapat diakses publik tanpa perlu login</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive WhatsApp Quick Brief Form -->
+          <div
+            class="lg:col-span-7 bg-brand-soft p-8 sm:p-10 rounded-3xl border border-brand-border shadow-card space-y-6">
+            <div>
+              <span class="text-xs font-bold text-lavender-700 uppercase tracking-wider">Quick Inquiry Form</span>
+              <h3 class="text-xl sm:text-2xl font-black text-brand-deep mt-1">Kirim Pesan Cepat ke WhatsApp Saya</h3>
+              <p class="text-xs text-gray-600 mt-1">Pilih kebutuhan konten UMKM Anda dan sistem akan otomatis memformat
+                pesan WhatsApp yang rapi.</p>
+            </div>
+
+            <form onsubmit="handleQuickWhatsApp(event)" class="space-y-4">
+              <div>
+                <label for="clientName" class="block text-xs font-bold text-gray-700 mb-1.5">Nama Anda / Pemilik
+                  Usaha</label>
+                <input type="text" id="clientName" required placeholder="Contoh: Budi Santoso"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-lavender-600" />
+              </div>
+
+              <div>
+                <label for="businessName" class="block text-xs font-bold text-gray-700 mb-1.5">Nama Brand / UMKM
+                  Anda</label>
+                <input type="text" id="businessName" required placeholder="Contoh: Dapur Nusantara / Glow Skincare"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-lavender-600" />
+              </div>
+
+              <div>
+                <label for="serviceType" class="block text-xs font-bold text-gray-700 mb-1.5">Jenis Konten yang
+                  Dibutuhkan</label>
+                <select id="serviceType"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-lavender-600">
+                  <option value="Paket Lengkap Media Sosial (Feed + Story + Reels)">Paket Lengkap Media Sosial (Feed +
+                    Story + Reels)</option>
+                  <option value="Desain Feed Instagram (Single & Carousel 4:5)">Desain Feed Instagram (Single & Carousel
+                    4:5)</option>
+                  <option value="Desain Instagram Story Vertikal (9:16)">Desain Instagram Story Vertikal (9:16)</option>
+                  <option value="Video Editing Reels / TikTok (CapCut)">Video Editing Reels / TikTok (CapCut)</option>
+                  <option value="Desain Katalog Produk UMKM">Desain Katalog Produk UMKM</option>
+                  <option value="Copywriting Iklan & Promosi Produk">Copywriting Iklan & Promosi Produk</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="projectMessage" class="block text-xs font-bold text-gray-700 mb-1.5">Catatan Tambahan
+                  (Opsional)</label>
+                <textarea id="projectMessage" rows="3"
+                  placeholder="Contoh: Kami butuh konten peluncuran menu baru pekan depan..."
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-lavender-600"></textarea>
+              </div>
+
+              <button type="submit"
+                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Kirim Pesan via WhatsApp Sekarang</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SECTION K: CLOSING SECTION ================= -->
+    <section
+      class="py-20 md:py-28 bg-gradient-to-b from-white via-lavender-50/50 to-lavender-100/60 border-t border-brand-border text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+        <div
+          class="w-16 h-16 rounded-full bg-lavender-700 text-white mx-auto flex items-center justify-center shadow-soft">
+          <i data-lucide="sparkles" class="w-8 h-8"></i>
+        </div>
+
+        <!-- Persis Kalimat Prompt Bagian K -->
+        <div class="space-y-4">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-brand-deep tracking-tight">
+            Thank You for Visiting My Portfolio
+          </h2>
+          <p class="text-base sm:text-xl font-medium text-lavender-900 max-w-2xl mx-auto leading-relaxed">
+            "Terus belajar, terus berkarya, dan terus berkembang menjadi Content Editor yang kreatif dan profesional."
+          </p>
+        </div>
+
+        <!-- Tombol Kolaborasi Wajib Sesuai Prompt -->
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/628895673306?text=Halo%20Rizki,%20saya%20ingin%20berkolaborasi%20dengan%20Anda."
+            target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-lavender-700 hover:bg-lavender-800 text-white font-extrabold text-base px-10 py-4 rounded-full shadow-elevated hover:shadow-glow transition-all duration-300">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Let's Collaborate!</span>
+          </a>
+
+          <a href="#hero"
+            class="inline-flex items-center gap-2 bg-white hover:bg-lavender-50 text-gray-700 border border-gray-300 font-bold text-sm px-6 py-4 rounded-full shadow-sm transition-all">
+            <i data-lucide="arrow-up" class="w-4 h-4"></i>
+            <span>Kembali ke Atas</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-brand-deep text-white py-12 border-t border-lavender-900 text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-lavender-600 text-white flex items-center justify-center font-bold text-sm">
+          RA
+        </div>
+        <div class="text-left">
+          <p class="font-bold text-white text-sm">Muhammad Rizki Ardhana</p>
+          <p class="text-gray-400 text-xs">Portofolio Akhir MIX Academy Batch 3 – Konten Editor 2026</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-gray-300 font-semibold">
+        <a href="#about" class="hover:text-white transition-colors">Tentang</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+        <a href="#dummy-project" class="hover:text-white transition-colors">Dummy Project</a>
+        <a href="#feed-design" class="hover:text-white transition-colors">Feed IG</a>
+        <a href="#reels-video" class="hover:text-white transition-colors">Reels CapCut</a>
+        <a href="#contact" class="hover:text-white transition-colors">Kontak</a>
+      </div>
+
+      <div class="text-center md:text-right text-[11px] text-gray-400">
+        <p>&copy; 2026 Muhammad Rizki Ardhana. All rights reserved.</p>
+        <p class="mt-0.5 text-lavender-300">Modern Minimalist • Elegant Professional • Responsive Design</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= INTERACTIVE IMAGE & DESIGN PREVIEW MODAL ================= -->
+  <div id="previewModal"
+    class="fixed inset-0 z-50 bg-brand-deep/80 backdrop-blur-md hidden flex items-center justify-center p-4 transition-all">
+    <div
+      class="relative bg-white rounded-3xl max-w-4xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-lavender-200 p-6 sm:p-8 space-y-4">
+
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+        <div>
+          <span class="text-xs font-bold text-lavender-700 bg-lavender-50 px-3 py-1 rounded-full uppercase">Design
+            Showcase Preview</span>
+          <h3 id="modalTitle" class="text-xl sm:text-2xl font-black text-gray-900 mt-1">Preview Karya</h3>
+        </div>
+        <button onclick="closeModal()" aria-label="Tutup Preview"
+          class="p-2.5 rounded-full hover:bg-gray-100 text-gray-500 hover:text-gray-900 focus:outline-none transition-colors">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Modal Image View Container -->
+      <div
+        class="w-full bg-slate-900/5 rounded-2xl p-3 sm:p-4 flex items-center justify-center overflow-hidden border border-gray-100">
+        <img id="modalImage" src="" alt="Modal Preview"
+          class="max-h-[75vh] w-auto max-w-full object-contain rounded-xl shadow-md" />
+      </div>
+
+      <!-- Modal Description & Rationale -->
+      <div class="space-y-2">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500">Keterangan &amp; Rationale Desain</h4>
+        <p id="modalDescription"
+          class="text-sm text-gray-700 leading-relaxed bg-emerald-50/50 p-4 rounded-xl border border-emerald-100"></p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="pt-2 flex flex-wrap items-center justify-between gap-3">
+        <a id="modalFullImageLink" href="#" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 hover:text-emerald-900 bg-emerald-50 hover:bg-emerald-100 px-4 py-2.5 rounded-xl border border-emerald-200 transition-colors">
+          <i data-lucide="external-link" class="w-4 h-4"></i> <span id="modalFullImageText">Buka Resolusi Penuh</span>
+        </a>
+        <button onclick="closeModal()"
+          class="bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs py-2.5 px-6 rounded-xl transition-all shadow-sm">
+          Tutup Pratinjau
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification element -->
+  <div id="toast"
+    class="fixed bottom-6 right-6 z-50 bg-brand-deep text-white text-xs font-bold px-5 py-3 rounded-xl shadow-2xl flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toastMsg">Teks berhasil disalin!</span>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // Initialize Lucide icons
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    });
+
+    // Mobile Navigation Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Compatibility helpers (no-op now that portfolio is 100% focused on HASANI Herbal Nabawi)
+    function switchBrandTab() { }
+    function switchCopyTab() { }
+    function switchFeedTab() { }
+    function switchStoryTab() { }
+
+    // Copy to clipboard with toast notification
+    function copyToClipboard(textareaId, buttonEl) {
+      const copyText = document.getElementById(textareaId).value;
+      navigator.clipboard.writeText(copyText).then(() => {
+        showToast("Naskah copywriting berhasil disalin ke clipboard!");
+      }).catch(err => {
+        // Fallback
+        const textarea = document.getElementById(textareaId);
+        textarea.classList.remove('hidden');
+        textarea.select();
+        document.execCommand('copy');
+        textarea.classList.add('hidden');
+        showToast("Naskah copywriting berhasil disalin!");
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    // Modal Image Preview Logic
+    function openModal(title, imageSrc, description) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalImage').src = imageSrc;
+      document.getElementById('modalDescription').innerText = description;
+      const fullImgLink = document.getElementById('modalFullImageLink');
+      const fullImgText = document.getElementById('modalFullImageText');
+      if (fullImgLink) {
+        fullImgLink.href = imageSrc;
+      }
+      if (fullImgText) {
+        if (imageSrc.includes('feed')) {
+          fullImgText.innerText = 'Buka Resolusi Penuh (1792×2400 px)';
+        } else if (imageSrc.includes('story')) {
+          fullImgText.innerText = 'Buka Resolusi Penuh (1080×1920 px)';
+        } else if (imageSrc.includes('catalog.svg') || imageSrc.includes('hasani-catalog-fullsheet')) {
+          fullImgText.innerText = 'Buka Lembar Penuh Katalog (Fullsheet HD)';
+        } else {
+          fullImgText.innerText = 'Buka File Gambar Asli';
+        }
+      }
+      const modal = document.getElementById('previewModal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      if (window.lucide) window.lucide.createIcons();
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('previewModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Close modal when clicking outside of dialog
+    document.getElementById('previewModal').addEventListener('click', (e) => {
+      if (e.target.id === 'previewModal') closeModal();
+    });
+
+    // WhatsApp Quick Form submission generator
+    function handleQuickWhatsApp(e) {
+      e.preventDefault();
+      const name = document.getElementById('clientName').value;
+      const business = document.getElementById('businessName').value;
+      const service = document.getElementById('serviceType').value;
+      const notes = document.getElementById('projectMessage').value;
+
+      let text = `Halo Muhammad Rizki Ardhana,\n\nNama saya *${name}* dari *${business}*.\nSaya tertarik bekerja sama dengan Anda untuk kebutuhan:\n📌 *${service}*`;
+      if (notes.trim()) {
+        text += `\n\nCatatan Tambahan:\n"${notes.trim()}"`;
+      }
+      text += `\n\nMohon informasi ketersediaan jadwal dan penawaran kerja sama. Terima kasih!`;
+
+      const encoded = encodeURIComponent(text);
+      const url = `https://wa.me/628895673306?text=${encoded}`;
+      window.open(url, '_blank');
+    }
+
+    // ================= REELS VIDEO PLAYER CONTROLLER =================
+    function toggleReelsPlay() {
+      const video = document.getElementById('reelsRealVideo');
+      const overlay = document.getElementById('reelsPlayOverlay');
+      const playIcon = document.getElementById('playIcon');
+
+      if (!video) return;
+
+      if (video.paused) {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              if (overlay) overlay.classList.add('opacity-0', 'pointer-events-none');
+              if (playIcon) playIcon.setAttribute('data-lucide', 'pause');
+              if (window.lucide) window.lucide.createIcons();
+            })
+            .catch(err => {
+              console.warn("Autoplay block / sound policy restriction:", err);
+              // Fallback: browser blocks unmuted playback, mute and retry
+              video.muted = true;
+              const volIcon = document.getElementById('volumeIcon');
+              if (volIcon) {
+                volIcon.setAttribute('data-lucide', 'volume-x');
+                if (window.lucide) window.lucide.createIcons();
+              }
+              video.play().then(() => {
+                if (overlay) overlay.classList.add('opacity-0', 'pointer-events-none');
+                if (playIcon) playIcon.setAttribute('data-lucide', 'pause');
+                if (window.lucide) window.lucide.createIcons();
+                showToast("Video diputar dalam mode hening. Klik ikon speaker untuk mengaktifkan suara!");
+              }).catch(e2 => {
+                console.error("Playback failed completely:", e2);
+                showToast("Gagal memutar video secara otomatis.");
+              });
+            });
+        }
+      } else {
+        video.pause();
+        if (overlay) overlay.classList.remove('opacity-0', 'pointer-events-none');
+        if (playIcon) playIcon.setAttribute('data-lucide', 'play');
+        if (window.lucide) window.lucide.createIcons();
+      }
+    }
+
+    function scrubReels(e) {
+      const video = document.getElementById('reelsRealVideo');
+      if (!video) return;
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const width = rect.width;
+      const ratio = Math.max(0, Math.min(1, clickX / width));
+      video.currentTime = ratio * (video.duration || 20);
+    }
+
+    function toggleReelsMute() {
+      const video = document.getElementById('reelsRealVideo');
+      if (!video) return;
+      video.muted = !video.muted;
+      const icon = document.getElementById('volumeIcon');
+      if (icon) {
+        if (video.muted) {
+          icon.setAttribute('data-lucide', 'volume-x');
+          showToast("Audio video di-mute");
+        } else {
+          icon.setAttribute('data-lucide', 'volume-2');
+          showToast("Audio video aktif");
+        }
+        if (window.lucide) window.lucide.createIcons();
+      }
+    }
+
+    function toggleReelsFullscreen() {
+      const video = document.getElementById('reelsRealVideo');
+      if (!video) return;
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      }
+    }
+
+    // Attach Video Event Listeners
+    document.addEventListener("DOMContentLoaded", () => {
+      const video = document.getElementById('reelsRealVideo');
+      if (!video) return;
+
+      video.addEventListener('click', toggleReelsPlay);
+
+      video.addEventListener('timeupdate', () => {
+        const cur = video.currentTime;
+        const dur = video.duration || 20;
+        const pct = (cur / dur) * 100;
+
+        const bar = document.getElementById('reelsProgressBar');
+        if (bar) bar.style.width = pct + '%';
+
+        const curSec = Math.floor(cur);
+        const durSec = Math.floor(dur);
+        const formatted = `00:${curSec < 10 ? '0' + curSec : curSec} / 00:${durSec < 10 ? '0' + durSec : durSec}`;
+
+        const curTimeEl = document.getElementById('reelsCurrentTime');
+        if (curTimeEl) curTimeEl.innerText = formatted;
+
+        const timerBadge = document.getElementById('reelsTimerBadge');
+        if (timerBadge) timerBadge.innerText = formatted;
+      });
+
+      video.addEventListener('ended', () => {
+        const overlay = document.getElementById('reelsPlayOverlay');
+        const playIcon = document.getElementById('playIcon');
+        if (overlay) overlay.classList.remove('opacity-0', 'pointer-events-none');
+        if (playIcon) playIcon.setAttribute('data-lucide', 'rotate-ccw');
+        if (window.lucide) window.lucide.createIcons();
+      });
+
+      video.addEventListener('play', () => {
+        const overlay = document.getElementById('reelsPlayOverlay');
+        const playIcon = document.getElementById('playIcon');
+        if (overlay) overlay.classList.add('opacity-0', 'pointer-events-none');
+        if (playIcon) playIcon.setAttribute('data-lucide', 'pause');
+        if (window.lucide) window.lucide.createIcons();
+      });
+
+      video.addEventListener('pause', () => {
+        const overlay = document.getElementById('reelsPlayOverlay');
+        const playIcon = document.getElementById('playIcon');
+        if (overlay) overlay.classList.remove('opacity-0', 'pointer-events-none');
+        if (playIcon) playIcon.setAttribute('data-lucide', 'play');
+        if (window.lucide) window.lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+
+</html>

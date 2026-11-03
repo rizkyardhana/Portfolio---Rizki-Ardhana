@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="catBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F2F8F4" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA820A" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D5C3A" />
+      <stop offset="100%" stop-color="#083823" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0D5C3A" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#catBg)" />
+  <rect x="25" y="25" width="1150" height="850" rx="24" fill="none" stroke="#C7E7D5" stroke-width="2" />
+  <rect x="33" y="33" width="1134" height="834" rx="18" fill="none" stroke="#E4F3EA" stroke-width="1" />
+
+  <!-- Top Header Banner -->
+  <g transform="translate(60, 65)">
+    <!-- Brand Badge -->
+    <rect x="0" y="0" width="230" height="34" rx="17" fill="url(#emeraldGrad)" />
+    <text x="115" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">KATALOG RESMI 2026</text>
+    
+    <!-- Title -->
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#0D5C3A">HASANI HERBAL NABAWI</text>
+    <text x="0" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#52796F">Lini Produk Suplemen Habbat 2 in 1 (Habbatussauda murni + Brazilian Propolis)</text>
+
+    <!-- Right Side Badges -->
+    <g transform="translate(860, 0)">
+      <rect x="0" y="5" width="220" height="42" rx="10" fill="#E4F3EA" stroke="#0D5C3A" stroke-width="1.5" />
+      <text x="110" y="24" font-family="sans-serif" font-size="11" font-weight="800" fill="#0D5C3A" text-anchor="middle">BPOM RI TR233044221</text>
+      <text x="110" y="38" font-family="sans-serif" font-size="10" font-weight="600" fill="#083823" text-anchor="middle">Halal Indonesia &amp; 100 Soft Capsule</text>
+    </g>
+  </g>
+
+  <!-- Product Grid: 4 Cards -->
+  <!-- Card 1: Single Bottle -->
+  <g transform="translate(60, 210)" filter="url(#cardShadow)">
+    <rect width="255" height="520" rx="18" fill="#FFFFFF" stroke="#D1E7DD" stroke-width="1.5" />
+    <rect x="15" y="15" width="225" height="210" rx="14" fill="#F4FAF6" />
+    <!-- Bottle Illustration / Placeholder -->
+    <rect x="92" y="55" width="70" height="120" rx="20" fill="#0D5C3A" />
+    <rect x="105" y="40" width="44" height="20" rx="6" fill="#083823" />
+    <rect x="97" y="90" width="60" height="65" rx="10" fill="#C59B27" />
+    <text x="127" y="125" font-family="sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">HASANI</text>
+    <text x="127" y="140" font-family="sans-serif" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="middle">HABBAT 2in1</text>
+
+    <!-- Details -->
+    <rect x="15" y="240" width="115" height="22" rx="11" fill="#E4F3EA" />
+    <text x="72" y="255" font-family="sans-serif" font-size="10" font-weight="700" fill="#0D5C3A" text-anchor="middle">Suplemen Harian</text>
+    
+    <text x="15" y="285" font-family="sans-serif" font-size="17" font-weight="800" fill="#0F281E">Habbat 2 in 1</text>
+    <text x="15" y="306" font-family="sans-serif" font-size="12" font-weight="700" fill="#0D5C3A">Isi: 100 Soft Capsule</text>
+    
+    <text x="15" y="332" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">Sinergi Habbatussauda</text>
+    <text x="15" y="348" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">450mg &amp; Propolis 50mg</text>
+    <text x="15" y="364" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">menjaga stamina harian.</text>
+
+    <!-- Price Box -->
+    <line x1="15" y1="440" x2="240" y2="440" stroke="#E2E8F0" stroke-width="1" />
+    <text x="15" y="465" font-family="sans-serif" font-size="11" font-weight="500" fill="#A0AEC0" text-decoration="line-through">Rp 120.000</text>
+    <text x="15" y="495" font-family="sans-serif" font-size="22" font-weight="900" fill="#0D5C3A">Rp 99.000</text>
+    <rect x="165" y="475" width="75" height="24" rx="6" fill="#E4F3EA" />
+    <text x="202" y="491" font-family="sans-serif" font-size="10" font-weight="800" fill="#0D5C3A" text-anchor="middle">Hemat 18%</text>
+  </g>
+
+  <!-- Card 2: Duo Bottle Bundling (BEST SELLER) -->
+  <g transform="translate(345, 195)" filter="url(#cardShadow)">
+    <rect width="255" height="535" rx="18" fill="#FFFFFF" stroke="#0D5C3A" stroke-width="2.5" />
+    <!-- Best Seller Ribbon -->
+    <rect x="55" y="-14" width="145" height="28" rx="14" fill="url(#goldGrad)" />
+    <text x="127" y="5" font-family="sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">⭐ BEST SELLER</text>
+
+    <rect x="15" y="30" width="225" height="210" rx="14" fill="#EBF6F0" />
+    <!-- Two Bottles Illustration -->
+    <g transform="translate(25, 0)">
+      <rect x="40" y="70" width="55" height="110" rx="16" fill="#0D5C3A" />
+      <rect x="50" y="55" width="35" height="18" rx="5" fill="#083823" />
+      <rect x="105" y="65" width="60" height="115" rx="18" fill="#0D5C3A" />
+      <rect x="116" y="50" width="38" height="18" rx="5" fill="#083823" />
+      <rect x="110" y="95" width="50" height="60" rx="8" fill="#C59B27" />
+      <text x="135" y="128" font-family="sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle">HASANI</text>
+    </g>
+
+    <!-- Details -->
+    <rect x="15" y="255" width="145" height="22" rx="11" fill="#FEF3C7" />
+    <text x="87" y="270" font-family="sans-serif" font-size="10" font-weight="800" fill="#92400E" text-anchor="middle">Bundling Hemat Keluarga</text>
+    
+    <text x="15" y="300" font-family="sans-serif" font-size="17" font-weight="800" fill="#0F281E">Paket Duo Imunitas</text>
+    <text x="15" y="321" font-family="sans-serif" font-size="12" font-weight="700" fill="#0D5C3A">2 Botol (200 Kapsul) + Bonus</text>
+    
+    <text x="15" y="347" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">Paket hemat keluarga! Gratis</text>
+    <text x="15" y="363" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">Sachet Biotawa + Gratis</text>
+    <text x="15" y="379" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">Ongkir seluruh Indonesia.</text>
+
+    <!-- Price Box -->
+    <line x1="15" y1="455" x2="240" y2="455" stroke="#E2E8F0" stroke-width="1" />
+    <text x="15" y="480" font-family="sans-serif" font-size="11" font-weight="500" fill="#A0AEC0" text-decoration="line-through">Rp 240.000</text>
+    <text x="15" y="510" font-family="sans-serif" font-size="24" font-weight="900" fill="#0D5C3A">Rp 189.000</text>
+    <rect x="150" y="490" width="90" height="24" rx="6" fill="#FEF3C7" />
+    <text x="195" y="506" font-family="sans-serif" font-size="9" font-weight="800" fill="#92400E" text-anchor="middle">Hemat Rp51.000</text>
+  </g>
+
+  <!-- Card 3: Formula & Composition -->
+  <g transform="translate(630, 210)" filter="url(#cardShadow)">
+    <rect width="255" height="520" rx="18" fill="#FFFFFF" stroke="#D1E7DD" stroke-width="1.5" />
+    <rect x="15" y="15" width="225" height="210" rx="14" fill="#F4FAF6" />
+    
+    <!-- Specs Graphic -->
+    <circle cx="127" cy="100" r="45" fill="#0D5C3A" opacity="0.1" />
+    <rect x="92" y="60" width="70" height="120" rx="18" fill="#0D5C3A" />
+    <rect x="98" y="85" width="58" height="85" rx="8" fill="#FFFFFF" opacity="0.9" />
+    <text x="127" y="105" font-family="sans-serif" font-size="9" font-weight="800" fill="#0D5C3A" text-anchor="middle">KOMPOSISI</text>
+    <text x="127" y="125" font-family="sans-serif" font-size="8" font-weight="600" fill="#083823" text-anchor="middle">Habbat 450mg</text>
+    <text x="127" y="140" font-family="sans-serif" font-size="8" font-weight="600" fill="#083823" text-anchor="middle">Propolis 50mg</text>
+
+    <!-- Details -->
+    <rect x="15" y="240" width="130" height="22" rx="11" fill="#E4F3EA" />
+    <text x="80" y="255" font-family="sans-serif" font-size="10" font-weight="700" fill="#0D5C3A" text-anchor="middle">Standar BPOM &amp; Halal</text>
+    
+    <text x="15" y="285" font-family="sans-serif" font-size="17" font-weight="800" fill="#0F281E">Komposisi &amp; Dosis</text>
+    <text x="15" y="306" font-family="sans-serif" font-size="12" font-weight="700" fill="#0D5C3A">BPOM TR233044221</text>
+    
+    <text x="15" y="332" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">Dewasa: 2-3 kapsul, 2x/hari</text>
+    <text x="15" y="348" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">Anak: 1 kapsul, 2x/hari</text>
+    <text x="15" y="364" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">100% herbal alami nabawi.</text>
+
+    <!-- Price Box -->
+    <line x1="15" y1="440" x2="240" y2="440" stroke="#E2E8F0" stroke-width="1" />
+    <text x="15" y="465" font-family="sans-serif" font-size="11" font-weight="600" fill="#718096">Garansi Resmi</text>
+    <text x="15" y="495" font-family="sans-serif" font-size="20" font-weight="900" fill="#0D5C3A">100% Herbal</text>
+    <rect x="155" y="475" width="85" height="24" rx="6" fill="#E4F3EA" />
+    <text x="197" y="491" font-family="sans-serif" font-size="10" font-weight="800" fill="#0D5C3A" text-anchor="middle">Halal Resmi</text>
+  </g>
+
+  <!-- Card 4: Soft Capsule Premium -->
+  <g transform="translate(915, 210)" filter="url(#cardShadow)">
+    <rect width="255" height="520" rx="18" fill="#FFFFFF" stroke="#D1E7DD" stroke-width="1.5" />
+    <rect x="15" y="15" width="225" height="210" rx="14" fill="#F4FAF6" />
+    
+    <!-- Capsule Graphic -->
+    <g transform="translate(50, 40)">
+      <ellipse cx="65" cy="85" rx="35" ry="18" fill="url(#goldGrad)" transform="rotate(-30, 65, 85)" />
+      <ellipse cx="85" cy="55" rx="35" ry="18" fill="url(#goldGrad)" transform="rotate(25, 85, 55)" />
+      <circle cx="70" cy="70" r="8" fill="#FFFFFF" opacity="0.6" />
+    </g>
+
+    <!-- Details -->
+    <rect x="15" y="240" width="120" height="22" rx="11" fill="#FEF3C7" />
+    <text x="75" y="255" font-family="sans-serif" font-size="10" font-weight="800" fill="#92400E" text-anchor="middle">Kualitas Ekstraksi</text>
+    
+    <text x="15" y="285" font-family="sans-serif" font-size="17" font-weight="800" fill="#0F281E">Golden Soft Capsule</text>
+    <text x="15" y="306" font-family="sans-serif" font-size="12" font-weight="700" fill="#0D5C3A">Cold-Pressed Extraction</text>
+    
+    <text x="15" y="332" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">Minyak cair dalam kapsul</text>
+    <text x="15" y="348" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">lunak higienis. Cepat larut,</text>
+    <text x="15" y="364" font-family="sans-serif" font-size="11" font-weight="400" fill="#4A5568">tanpa pahit, ramah lambung.</text>
+
+    <!-- Price Box -->
+    <line x1="15" y1="440" x2="240" y2="440" stroke="#E2E8F0" stroke-width="1" />
+    <text x="15" y="465" font-family="sans-serif" font-size="11" font-weight="600" fill="#718096">Bioavailabilitas</text>
+    <text x="15" y="495" font-family="sans-serif" font-size="20" font-weight="900" fill="#0D5C3A">Cepat Serap</text>
+    <rect x="155" y="475" width="85" height="24" rx="6" fill="#FEF3C7" />
+    <text x="197" y="491" font-family="sans-serif" font-size="9" font-weight="800" fill="#92400E" text-anchor="middle">Grade A Gold</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <g transform="translate(60, 770)">
+    <rect width="1080" height="60" rx="14" fill="#0D5C3A" />
+    <text x="30" y="36" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">
+      📞 Pemesanan WhatsApp: 0858-4690-6014  •  Instagram: @hasani.herbal  •  Pengiriman Cepat Seluruh Indonesia (Bisa COD)
+    </text>
+    <rect x="910" y="12" width="145" height="36" rx="8" fill="#C59B27" />
+    <text x="982" y="35" font-family="sans-serif" font-size="12" font-weight="900" fill="#083823" text-anchor="middle">ORDER SEKARANG</text>
+  </g>
+</svg>

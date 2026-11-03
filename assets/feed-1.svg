@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9FE" />
+      <stop offset="50%" stop-color="#F4EEFC" />
+      <stop offset="100%" stop-color="#E8DCF8" />
+    </linearGradient>
+    <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B89DE9" />
+      <stop offset="40%" stop-color="#E7DCF8" />
+      <stop offset="80%" stop-color="#9B74DF" />
+      <stop offset="100%" stop-color="#6C3DB8" />
+    </linearGradient>
+    <filter id="fShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#3D1E6D" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1080" height="1350" fill="url(#bg1)" />
+
+  <!-- Editorial Grid & Subtle Ornaments -->
+  <rect x="50" y="50" width="980" height="1250" fill="none" stroke="#D5C2F2" stroke-width="1.5" stroke-dasharray="8,8" opacity="0.6" />
+  <circle cx="540" cy="720" r="380" fill="#FFFFFF" opacity="0.6" />
+  <circle cx="540" cy="720" r="300" fill="#F4EEFC" opacity="0.7" />
+
+  <!-- Header Section -->
+  <g transform="translate(100, 110)">
+    <rect x="0" y="0" width="190" height="36" rx="18" fill="#8354CE" />
+    <text x="95" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#FFFFFF" text-anchor="middle">NEW LAUNCH</text>
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="600" letter-spacing="4" fill="#6C3DB8">LAVENDER BEAUTY</text>
+    <text x="0" y="160" font-family="'Plus Jakarta Sans', 'Playfair Display', serif" font-size="58" font-weight="800" fill="#241044" line-height="1.2">The Gentle Hydration</text>
+    <text x="0" y="215" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="400" fill="#542E93">Hydrating Facial Serum • 30ml</text>
+  </g>
+
+  <!-- Skincare Serum Bottle Illustration (Product Mockup) -->
+  <g transform="translate(540, 720)" filter="url(#fShadow)">
+    <!-- Shadow beneath bottle -->
+    <ellipse cx="0" cy="260" rx="130" ry="22" fill="#3D1E6D" opacity="0.2" />
+
+    <!-- Dropper Cap -->
+    <rect x="-35" y="-220" width="70" height="50" rx="12" fill="#FFFFFF" stroke="#E7DCF8" stroke-width="3" />
+    <rect x="-50" y="-170" width="100" height="24" rx="4" fill="#D4AF37" />
+    <rect x="-42" y="-146" width="84" height="20" fill="#241044" />
+
+    <!-- Glass Bottle Body -->
+    <rect x="-100" y="-126" width="200" height="360" rx="36" fill="url(#bottleGrad)" stroke="#FFFFFF" stroke-width="4" />
+    <!-- Glass Reflections -->
+    <rect x="-85" y="-110" width="25" height="320" rx="12" fill="#FFFFFF" opacity="0.45" />
+
+    <!-- Product Label -->
+    <rect x="-80" y="-40" width="160" height="210" rx="12" fill="#FFFFFF" />
+    <!-- Label Detail -->
+    <circle cx="0" cy="-10" r="14" fill="#F4EEFC" />
+    <path d="M 0,2 L 0,-18" stroke="#8354CE" stroke-width="2" />
+    <circle cx="-3" cy="-12" r="2.5" fill="#8354CE" />
+    <circle cx="3" cy="-8" r="2.5" fill="#8354CE" />
+    <text x="0" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" letter-spacing="2" fill="#241044" text-anchor="middle">LAVENDER</text>
+    <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" letter-spacing="1.5" fill="#8354CE" text-anchor="middle">BEAUTY</text>
+    <line x1="-50" y1="56" x2="50" y2="56" stroke="#E7DCF8" stroke-width="1.5" />
+    <text x="0" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#241044" text-anchor="middle">HYDRATING</text>
+    <text x="0" y="96" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#6C3DB8" text-anchor="middle">FACIAL SERUM</text>
+    <text x="0" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#8354CE" text-anchor="middle">100% ORGANIC EXTRACT</text>
+    <text x="0" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="400" fill="#542E93" text-anchor="middle">HYALURONIC ACID 2%</text>
+    <text x="0" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="500" fill="#8354CE" text-anchor="middle">30 ml / 1.0 fl.oz</text>
+  </g>
+
+  <!-- Benefit Tags / Floating Cards -->
+  <!-- Tag 1 -->
+  <g transform="translate(100, 580)" filter="url(#fShadow)">
+    <rect width="260" height="90" rx="16" fill="#FFFFFF" opacity="0.95" />
+    <circle cx="45" cy="45" r="22" fill="#F4EEFC" />
+    <text x="45" y="52" font-family="sans-serif" font-size="20" text-anchor="middle">💧</text>
+    <text x="82" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#241044">12H Moisture Lock</text>
+    <text x="82" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="400" fill="#542E93">Hidrasi mendalam</text>
+  </g>
+
+  <!-- Tag 2 -->
+  <g transform="translate(720, 580)" filter="url(#fShadow)">
+    <rect width="260" height="90" rx="16" fill="#FFFFFF" opacity="0.95" />
+    <circle cx="45" cy="45" r="22" fill="#F4EEFC" />
+    <text x="45" y="52" font-family="sans-serif" font-size="20" text-anchor="middle">🌿</text>
+    <text x="82" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#241044">Calming Scent</text>
+    <text x="82" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="400" fill="#542E93">Menenangkan kulit</text>
+  </g>
+
+  <!-- Tag 3 -->
+  <g transform="translate(720, 780)" filter="url(#fShadow)">
+    <rect width="260" height="90" rx="16" fill="#FFFFFF" opacity="0.95" />
+    <circle cx="45" cy="45" r="22" fill="#F4EEFC" />
+    <text x="45" y="52" font-family="sans-serif" font-size="20" text-anchor="middle">✨</text>
+    <text x="82" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#241044">Non-Sticky Feel</text>
+    <text x="82" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="400" fill="#542E93">Cepat meresap</text>
+  </g>
+
+  <!-- Bottom CTA Bar -->
+  <g transform="translate(100, 1140)">
+    <rect width="880" height="110" rx="24" fill="#241044" />
+    <text x="50" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Kembalikan Segarnya Kulitmu</text>
+    <text x="50" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="400" fill="#D5C2F2">Diformulasikan khusus untuk menjaga kelembapan kulit aktif</text>
+
+    <!-- Button -->
+    <rect x="620" y="25" width="220" height="60" rx="30" fill="#8354CE" />
+    <text x="730" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Cek di Bio ➔</text>
+  </g>
+</svg>
