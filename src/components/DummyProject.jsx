@@ -48,7 +48,7 @@ export default function DummyProject() {
               {activeTab === 'hasani' ? (
                 <div className="inline-flex items-center gap-3.5 bg-white p-2.5 pr-5 rounded-2xl shadow-sm border border-emerald-200">
                   <img
-                    src="./public/assets/hasani/hasani-logo-thumb.jpeg"
+                    src="./assets/hasani/hasani-logo-thumb.jpeg"
                     alt="HASANI Herbal Nabawi Logo"
                     className="h-14 w-14 object-cover rounded-xl border border-amber-200"
                   />
@@ -63,7 +63,7 @@ export default function DummyProject() {
                 </div>
               ) : (
                 <div className="inline-block bg-white px-4 py-2 rounded-xl shadow-sm border border-lavender-100">
-                  <img src="./public/assets/brand-logo.svg" alt="Lavender Beauty Logo" className="h-10 w-auto" />
+                  <img src="./assets/brand-logo.svg" alt="Lavender Beauty Logo" className="h-10 w-auto" />
                 </div>
               )}
 

@@ -109,10 +109,10 @@ export default function ReelsVideo() {
                   onClick={togglePlay}
                   className="w-full h-full object-cover cursor-pointer"
                 >
-                  <source src="./public/assets/reels-video-h264.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
-                  <source src="./public/assets/reels-video-h264.mp4" type="video/mp4" />
+                  <source src="./assets/reels-video-h264.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
                   <source src="./assets/reels-video-h264.mp4" type="video/mp4" />
-                  <source src="./public/assets/reels-video.mp4" type="video/mp4" />
+                  <source src="./assets/reels-video-h264.mp4" type="video/mp4" />
+                  <source src="./assets/reels-video.mp4" type="video/mp4" />
                   <source src="./assets/reels-video.mp4" type="video/mp4" />
                   <source src="./assets/reels video editing/reels video.mp4" type="video/mp4" />
                   Browser Anda tidak mendukung tag pemutar video HTML5.
@@ -210,7 +210,7 @@ export default function ReelsVideo() {
               {/* Direct Open Link */}
               <div className="mt-3 text-center">
                 <a
-                  href="./public/assets/reels-video.mp4"
+                  href="./assets/reels-video.mp4"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-700 hover:text-emerald-900 bg-emerald-50 hover:bg-emerald-100 px-3 py-1.5 rounded-lg border border-emerald-200 transition-colors"
