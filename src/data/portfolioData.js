@@ -23,7 +23,7 @@ export const personalInfo = {
   email: "bariz.creative@gmail.com",
   instagram: "@rizkyardhana.id",
   instagramUrl: "https://instagram.com/rizkyardhana.id",
-  portfolioUrl: "https://portofolio-rizkiardhana.vercel.app",
+  portfolioUrl: "https://portfolio-rizkiardhana.vercel.app/",
   location: "Indonesia",
   availability: "Open for Freelance & Collaborative Projects"
 };

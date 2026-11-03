@@ -69,7 +69,7 @@ http://localhost:3000
 
 ## 🌐 5. Cara Mempublikasikan Menjadi Link Publik Gratis (Vercel / Netlify / GitHub Pages)
 
-Untuk mendapatkan link website publik (misal: `https://portofolio-rizkiardhana.vercel.app`) yang dapat dicantumkan di CV, LinkedIn, atau bio Instagram:
+Untuk mendapatkan link website publik (misal: `https://portfolio-rizkiardhana.vercel.app`) yang dapat dicantumkan di CV, LinkedIn, atau bio Instagram:
 
 ### Opsi A: Melalui Vercel (Paling Mudah & Cepat - 1 Menit)
 1. Buka [vercel.com](https://vercel.com) dan login dengan akun GitHub / Google Anda.
