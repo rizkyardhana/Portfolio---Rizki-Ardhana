@@ -33,7 +33,7 @@ export default function StoryDesign({ onSelectImage }) {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-emerald-900/90 leading-relaxed max-w-3xl">
-              Format vertikal interaktif yang dioptimalkan untuk safe-area Instagram Story: penempatan stiker tanya jawab (Q&amp;A), edukasi manfaat kesehatan jantung &amp; imunitas, serta banner promosi bundling hemat Rp189.000 dengan link langsung ke WhatsApp pemesanan.
+              Format vertikal interaktif yang dioptimalkan untuk safe-area Instagram Story: penempatan stiker tanya jawab (Q&amp;A), edukasi manfaat stamina &amp; imunitas keluarga, serta banner promosi bundling hemat Rp189.000 dengan link langsung ke WhatsApp pemesanan.
             </p>
           </div>
           <div className="flex items-center gap-2 shrink-0">

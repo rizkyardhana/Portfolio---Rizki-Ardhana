@@ -158,10 +158,11 @@ export const hasaniCopywritingProjects = [
     id: 1,
     briefNumber: "Brief 01 • Promo Harga Spesial",
     badge: "Tanya Jawab / Q&A",
+    role: "Copywriter & Audience Research",
     title: "Edisi Promo Harga Spesial (Tanya Jawab)",
     headline: "Rp99 Ribu Untuk Jaga Stamina? Beneran..?",
     body: "Suplemen herbal HASANI Habbatussauda 2 in 1 (Habbatussauda + Brazilian Propolis) dalam bentuk 100 soft capsule. Harga promo spesial turun dari Rp120.000 menjadi Rp99.000/botol. Paket hemat: Beli 2 botol Rp189.000 + Gratis Sachet Biotawa + Gratis Ongkir. Keunggulan: Meningkatkan daya tahan tubuh, melancarkan pencernaan, nutrisi alami & aman, serta terdaftar BPOM (TR233044221) dengan rating 4.8 dari ratusan pembeli.",
-    cta: "Pesan di yubi.id/tokobaik atau WhatsApp 0858-4698-6014.",
+    cta: "Pesan di yubi.id/tokobaik atau WhatsApp 0858-4690-6014.",
     target: "Orang dewasa dan keluarga yang ingin menjaga stamina secara praktis dan hemat.",
     tone: "Persuasif, interaktif, merangsang rasa penasaran (efek kontras harga), dan terpercaya."
   },
@@ -169,9 +170,10 @@ export const hasaniCopywritingProjects = [
     id: 2,
     briefNumber: "Brief 02 • Vitalitas & Energi",
     badge: "Aktivitas Fisik",
+    role: "Copywriter & Benefit Angle",
     title: "Edisi Vitalitas & Aktivitas Fisik",
     headline: "Kembalikan Vitalitas & Jaga Stamina!",
-    body: "Rahasia tubuh sehat & aktif setiap hari dengan 100% herbal alami. Formulasi Habbat 2 in 1 (Habbatussauda + Propolis). Manfaat utama: Meningkatkan daya tahan tubuh, menjaga kesehatan jantung, kaya antioksidan alami, aman, dan terpercaya untuk seluruh keluarga. Layanan belanja: Bisa COD & Gratis Ongkir.",
+    body: "Rahasia tubuh sehat & aktif setiap hari dengan 100% herbal alami. Formulasi Habbat 2 in 1 (Habbatussauda + Propolis). Manfaat utama (BPOM TR233044221): Membantu memelihara daya tahan tubuh, menjaga stamina & kebugaran fisik harian, serta kaya antioksidan alami. Layanan belanja: Bisa COD & Gratis Ongkir.",
     cta: "Beli Sekarang > (Layanan Belanja: Bisa COD & Gratis Ongkir)",
     target: "Pria/wanita dewasa serta masyarakat aktif yang membutuhkan tambahan energi dan kebugaran tubuh sehari-hari.",
     tone: "Energik, memotivasi, solutif, dan meyakinkan."
@@ -180,6 +182,7 @@ export const hasaniCopywritingProjects = [
     id: 3,
     briefNumber: "Brief 03 • Imunitas Keluarga",
     badge: "Bundling Hemat & BPOM",
+    role: "Copywriter & Bundling Angle",
     title: "Edisi Imunitas Keluarga & Bundling Hemat",
     headline: "Jaga Stamina & Imunitas Keluarga!",
     body: "Hasani Herbal Nabawi - Solusi Sehat Alami Setiap Hari. Manfaat: Meningkatkan daya tahan tubuh, membantu menjaga stamina, melancarkan aliran darah, kaya antioksidan alami, 100% bahan herbal alami, aman dikonsumsi tiap hari. Promo Spesial Bundling & Gratis Ongkir: Hanya Rp99.000/botol (Coret Rp120.000) atau Paket 2 Botol: Rp189.000. Legalitas: Sudah bersertifikat Halal Indonesia & terdaftar BPOM TR233044221 (Isi 100 Soft Capsule).",
@@ -268,6 +271,7 @@ export const hasaniFeedDesigns = [
   {
     id: 1,
     campaign: "HASANI Herbal Nabawi",
+    role: "Visual Graphic Design (Canva 1792×2400) & Promo Layout",
     type: "Edisi Promo Harga Spesial / Tanya Jawab",
     title: "Rp99 Ribu Untuk Jaga Stamina? Beneran..?",
     headline: "Rp99 Ribu Untuk Jaga Stamina? Beneran..?",
@@ -280,8 +284,8 @@ export const hasaniFeedDesigns = [
     bundleDeal: "Beli 2 botol Rp 189.000 + Gratis Sachet Biotawa + Gratis Ongkir",
     legalities: "BPOM TR233044221 • Rating 4.8",
     description: "Suplemen herbal HASANI Habbatussauda 2 in 1 (Habbatussauda + Brazilian Propolis) dalam bentuk 100 soft capsule. Harga promo spesial turun dari Rp120.000 menjadi Rp99.000/botol. Paket hemat: Beli 2 botol Rp189.000 + Gratis Sachet Biotawa + Gratis Ongkir. Keunggulan: Meningkatkan daya tahan tubuh, melancarkan pencernaan, nutrisi alami & aman, serta terdaftar BPOM (TR233044221) dengan rating 4.8 dari ratusan pembeli.",
-    cta: "Pesan di yubi.id/tokobaik atau WhatsApp 0858-4698-6014",
-    ctaLink: "https://wa.me/6285846986014?text=Halo%20Hasani%20Herbal,%20saya%20ingin%20pesan%20promo%20Habbatussauda%20Rp99.000",
+    cta: "Pesan di yubi.id/tokobaik atau WhatsApp 0858-4690-6014",
+    ctaLink: "https://wa.me/6285846906014?text=Halo%20Hasani%20Herbal,%20saya%20ingin%20pesan%20promo%20Habbatussauda%20Rp99.000",
     target: "Orang dewasa dan keluarga yang ingin menjaga stamina secara praktis dan hemat.",
     tone: "Persuasif, interaktif, merangsang rasa penasaran (efek kontras harga), dan terpercaya.",
     hashtags: "#HasaniHerbal #Habbatussauda2in1 #Propolis #PromoHerbal #JagaStamina #Biotawa"
@@ -289,6 +293,7 @@ export const hasaniFeedDesigns = [
   {
     id: 2,
     campaign: "HASANI Herbal Nabawi",
+    role: "Visual Graphic Design (Canva 1792×2400) & Vitality Layout",
     type: "Edisi Vitalitas & Aktivitas Fisik",
     title: "Kembalikan Vitalitas & Jaga Stamina!",
     headline: "Kembalikan Vitalitas & Jaga Stamina!",
@@ -298,9 +303,9 @@ export const hasaniFeedDesigns = [
     badge: "Vitalitas & Aktivitas Fisik",
     pricePromo: "Bisa COD & Gratis Ongkir",
     legalities: "100% Herbal Alami • Habbat + Propolis",
-    description: "Rahasia tubuh sehat & aktif setiap hari dengan 100% herbal alami. Formulasi Habbat 2 in 1 (Habbatussauda + Propolis). Manfaat utama: Meningkatkan daya tahan tubuh, menjaga kesehatan jantung, kaya antioksidan alami, aman, dan terpercaya untuk seluruh keluarga. Layanan belanja: Bisa COD & Gratis Ongkir.",
+    description: "Rahasia tubuh sehat & aktif setiap hari dengan 100% herbal alami. Formulasi Habbat 2 in 1 (Habbatussauda + Propolis). Manfaat utama: Membantu memelihara stamina & kebugaran fisik harian, meningkatkan daya tahan tubuh, kaya antioksidan alami, aman, dan terpercaya untuk seluruh keluarga. Layanan belanja: Bisa COD & Gratis Ongkir.",
     cta: "Beli Sekarang >",
-    ctaLink: "https://wa.me/6285846986014?text=Halo%20Hasani%20Herbal,%20saya%20tertarik%20dengan%20Habbat%202in1%20untuk%20vitalitas",
+    ctaLink: "https://wa.me/6285846906014?text=Halo%20Hasani%20Herbal,%20saya%20tertarik%20dengan%20Habbat%202in1%20untuk%20vitalitas",
     target: "Pria/wanita dewasa serta masyarakat aktif yang membutuhkan tambahan energi dan kebugaran tubuh sehari-hari.",
     tone: "Energik, memotivasi, solutif, dan meyakinkan.",
     hashtags: "#VitalitasTubuh #StaminaAktif #Habbatussauda #HerbalKeluarga #AntioksidanAlami"
@@ -308,6 +313,7 @@ export const hasaniFeedDesigns = [
   {
     id: 3,
     campaign: "HASANI Herbal Nabawi",
+    role: "Visual Graphic Design (Canva 1792×2400) & Family Layout",
     type: "Edisi Imunitas Keluarga & Bundling Hemat",
     title: "Jaga Stamina & Imunitas Keluarga!",
     headline: "Jaga Stamina & Imunitas Keluarga!",
@@ -371,6 +377,7 @@ export const hasaniStoryDesigns = [
   {
     id: 1,
     campaign: "HASANI Herbal Nabawi",
+    role: "Story Layout Designer (Canva 9:16) & Q&A Sticker Mockup",
     type: "Story Tanya Jawab & Promo",
     title: "Rp99 Ribu untuk Jaga Stamina? Beneran..?",
     headline: "Rp99 Ribu untuk Jaga Stamina? Beneran..?",
@@ -383,11 +390,12 @@ export const hasaniStoryDesigns = [
     callToAction: "Ketuk [ PESAN SEKARANG ] untuk klaim promo",
     pricePromo: "1 Botol Rp99.000 | 2 Botol Rp189.000",
     legalities: "BPOM TR233044221 • Rating 4.8 dari ratusan pembeli",
-    ctaLink: "https://wa.me/6285846986014?text=Halo%20Hasani%20Herbal,%20saya%20tertarik%20dengan%20promo%20Story%20Habbatussauda%20Rp99.000"
+    ctaLink: "https://wa.me/6285846906014?text=Halo%20Hasani%20Herbal,%20saya%20tertarik%20dengan%20promo%20Story%20Habbatussauda%20Rp99.000"
   },
   {
     id: 2,
     campaign: "HASANI Herbal Nabawi",
+    role: "Story Layout Designer (Canva 9:16) & Educational Benefits",
     type: "Story Edukasi Manfaat & Formulasi",
     title: "Solusi Sehat dengan Ramuan Herbal Pilihan",
     headline: "Hasani Herbal Nabawi — Solusi Sehat dengan Ramuan Herbal Pilihan",
@@ -395,16 +403,17 @@ export const hasaniStoryDesigns = [
     image: "./assets/hasani/hasani-story-2.jpeg",
     thumbnail: "./assets/hasani/hasani-story-2-thumb.jpeg",
     badge: "Edukasi Manfaat",
-    description: "Desain Instagram Story vertikal berlatar hijau herbal elegan yang memuat 4 poin manfaat utama: 1) Meningkatkan Daya Tahan Tubuh, 2) Menjaga Kesehatan Jantung, 3) Kaya Antioksidan Alami, dan 4) 100% Herbal Alami & Aman, dilengkapi logo Halal Indonesia & BPOM.",
+    description: "Desain Instagram Story vertikal berlatar hijau herbal elegan yang memuat 4 poin manfaat utama: 1) Meningkatkan Daya Tahan Tubuh, 2) Membantu Memelihara Stamina & Kebugaran Fisik, 3) Kaya Antioksidan Alami, dan 4) 100% Herbal Alami & Aman, dilengkapi logo Halal Indonesia & BPOM.",
     interactiveFeature: "Link sticker button [ BELI SEKARANG ] dengan micro-copy 'Sehat Alami, Hidup Lebih Baik'.",
     callToAction: "Ketuk [ BELI SEKARANG ] untuk info dan order",
     pricePromo: "Bisa COD & Gratis Ongkir",
     legalities: "Sertifikasi Halal Indonesia & BPOM Resmi",
-    ctaLink: "https://wa.me/6285846986014?text=Halo%20Hasani%20Herbal,%20saya%20ingin%20konsultasi%20manfaat%20Habbat%202in1"
+    ctaLink: "https://wa.me/6285846906014?text=Halo%20Hasani%20Herbal,%20saya%20ingin%20konsultasi%20manfaat%20Habbat%202in1"
   },
   {
     id: 3,
     campaign: "HASANI Herbal Nabawi",
+    role: "Story Layout Designer (Canva 9:16) & Promo Bundling",
     type: "Story Promo Spesial Bundling",
     title: "Jaga Stamina & Imunitas Keluarga!",
     headline: "Jaga Stamina & Imunitas Keluarga! Solusi Sehat Alami Setiap Hari",

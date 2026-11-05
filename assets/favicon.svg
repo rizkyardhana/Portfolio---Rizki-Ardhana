@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="raBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D5C3A" />
+      <stop offset="100%" stop-color="#052618" />
+    </linearGradient>
+    <linearGradient id="goldDot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect width="64" height="64" rx="16" fill="url(#raBg)" />
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#34D399" stroke-opacity="0.35" stroke-width="1.5" />
+  
+  <!-- Monogram RA -->
+  <text x="32" y="43" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="29" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">RA</text>
+  
+  <!-- Modern Gold Accent Dot -->
+  <circle cx="50" cy="17" r="4.5" fill="url(#goldDot)" />
+</svg>
