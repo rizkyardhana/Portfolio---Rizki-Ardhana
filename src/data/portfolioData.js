@@ -181,7 +181,7 @@ export const hasaniCopywritingProjects = [
   {
     id: 3,
     briefNumber: "Brief 03 • Imunitas Keluarga",
-    badge: "Bundling Hemat & BPOM",
+    badge: "Bundling & BPOM",
     role: "Copywriter & Bundling Angle",
     title: "Edisi Imunitas Keluarga & Bundling Hemat",
     headline: "Jaga Stamina & Imunitas Keluarga!",

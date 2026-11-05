@@ -42,15 +42,15 @@ export default function Copywriting() {
                 }`}
               >
                 <div className="space-y-6">
-                  <div className="flex items-center justify-between">
-                    <span className={`text-xs font-bold px-3 py-1 rounded-full border ${
+                  <div className="flex items-center justify-between gap-2">
+                    <span className={`text-xs font-bold px-3 py-1 rounded-full border whitespace-nowrap shrink-0 ${
                       activeTab === 'hasani'
                         ? 'text-emerald-800 bg-emerald-50 border-emerald-200'
                         : 'text-lavender-700 bg-lavender-50 border-lavender-200'
                     }`}>
                       {item.briefNumber || `Brief 0${item.id}`}
                     </span>
-                    <span className={`text-xs font-semibold ${activeTab === 'hasani' ? 'text-emerald-700' : 'text-gray-400'}`}>
+                    <span className={`text-xs font-semibold whitespace-nowrap ${activeTab === 'hasani' ? 'text-emerald-700' : 'text-gray-400'}`}>
                       {item.badge || item.title}
                     </span>
                   </div>
